@@ -168,7 +168,7 @@ export default function SciencePage() {
           <div className="flex flex-wrap gap-4 text-sm">
             <Link href="/solutions/gcc" className="text-navy underline">Explore GCC hiring workflows</Link>
             <Link href="/solutions/startups" className="text-navy underline">Explore startup hiring workflows</Link>
-            <Link href="/company" className="text-navy underline">Book a Rigor Audit</Link>
+            <Link href="/demo" className="text-navy underline">Book a Demo</Link>
           </div>
         </section>
 
