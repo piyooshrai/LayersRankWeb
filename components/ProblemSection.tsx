@@ -62,7 +62,7 @@ export function ProblemSection() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-gray-200">
             <Image
-              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1400&q=80"
+              src="/images/problem-recruiter-screening.svg"
               alt="Recruiter reviewing applications on laptop in modern office"
               fill
               className="object-cover"

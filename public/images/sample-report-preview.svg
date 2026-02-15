@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+  <rect width="1400" height="1050" fill="#F8F9FA"/>
+  <!-- Report card -->
+  <rect x="200" y="50" width="1000" height="950" rx="20" fill="#fff" stroke="#E5E7EB" stroke-width="2"/>
+  <!-- Header -->
+  <rect x="200" y="50" width="1000" height="120" rx="20" fill="#2D2D3A"/>
+  <rect x="200" y="130" width="1000" height="40" fill="#2D2D3A"/>
+  <text x="260" y="105" font-family="Inter, sans-serif" font-size="14" fill="#6B6B7B">Candidate Report</text>
+  <text x="260" y="135" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#fff">Priya Sharma</text>
+  <text x="260" y="158" font-family="Inter, sans-serif" font-size="13" fill="#9CA3AF">Senior Backend Engineer · GCC Engineering Team</text>
+  <!-- Verdict badge -->
+  <rect x="980" y="90" width="150" height="40" rx="20" fill="#4CAF7D" opacity="0.2"/>
+  <circle cx="1005" cy="110" r="5" fill="#4CAF7D"/>
+  <text x="1055" y="116" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#4CAF7D">Strong Hire</text>
+  <!-- Overall score -->
+  <g transform="translate(260, 210)">
+    <text font-family="Inter, sans-serif" font-size="13" fill="#6B6B7B">Overall Score</text>
+    <text y="50" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2D2D3A">82</text>
+    <text x="75" y="50" font-family="Inter, sans-serif" font-size="20" fill="#6B6B7B">/100</text>
+  </g>
+  <!-- Confidence meter -->
+  <g transform="translate(700, 210)">
+    <text font-family="Inter, sans-serif" font-size="13" fill="#6B6B7B">Decision Confidence</text>
+    <rect y="30" width="400" height="14" rx="7" fill="#E5E7EB"/>
+    <rect y="30" width="332" height="14" rx="7" fill="#4CAF7D"/>
+    <text x="410" y="43" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#4CAF7D">83%</text>
+  </g>
+  <!-- Divider -->
+  <line x1="260" y1="290" x2="1140" y2="290" stroke="#E5E7EB" stroke-width="1"/>
+  <!-- Dimension scores -->
+  <text x="260" y="330" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#2D2D3A">Dimension Scores</text>
+  <!-- Technical Depth -->
+  <g transform="translate(260, 360)">
+    <text font-family="Inter, sans-serif" font-size="13" fill="#4A4A5A">Technical Depth</text>
+    <rect x="180" y="-10" width="540" height="14" rx="7" fill="#E5E7EB"/>
+    <rect x="180" y="-10" width="470" height="14" rx="7" fill="#4CAF7D"/>
+    <text x="740" y="3" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#2D2D3A">87</text>
+    <circle cx="810" cy="-3" r="5" fill="#4CAF7D"/>
+    <text x="824" y="2" font-family="JetBrains Mono, monospace" font-size="11" fill="#6B6B7B">94% conf.</text>
+  </g>
+  <!-- System Design -->
+  <g transform="translate(260, 410)">
+    <text font-family="Inter, sans-serif" font-size="13" fill="#4A4A5A">System Design</text>
+    <rect x="180" y="-10" width="540" height="14" rx="7" fill="#E5E7EB"/>
+    <rect x="180" y="-10" width="389" height="14" rx="7" fill="#F5B941"/>
+    <text x="740" y="3" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#2D2D3A">72</text>
+    <circle cx="810" cy="-3" r="5" fill="#F5B941"/>
+    <text x="824" y="2" font-family="JetBrains Mono, monospace" font-size="11" fill="#6B6B7B">68% conf.</text>
+  </g>
+  <!-- Behavioral -->
+  <g transform="translate(260, 460)">
+    <text font-family="Inter, sans-serif" font-size="13" fill="#4A4A5A">Behavioral</text>
+    <rect x="180" y="-10" width="540" height="14" rx="7" fill="#E5E7EB"/>
+    <rect x="180" y="-10" width="492" height="14" rx="7" fill="#4CAF7D"/>
+    <text x="740" y="3" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#2D2D3A">91</text>
+    <circle cx="810" cy="-3" r="5" fill="#4CAF7D"/>
+    <text x="824" y="2" font-family="JetBrains Mono, monospace" font-size="11" fill="#6B6B7B">89% conf.</text>
+  </g>
+  <!-- Communication -->
+  <g transform="translate(260, 510)">
+    <text font-family="Inter, sans-serif" font-size="13" fill="#4A4A5A">Communication</text>
+    <rect x="180" y="-10" width="540" height="14" rx="7" fill="#E5E7EB"/>
+    <rect x="180" y="-10" width="421" height="14" rx="7" fill="#4CAF7D"/>
+    <text x="740" y="3" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#2D2D3A">78</text>
+    <circle cx="810" cy="-3" r="5" fill="#4CAF7D"/>
+    <text x="824" y="2" font-family="JetBrains Mono, monospace" font-size="11" fill="#6B6B7B">82% conf.</text>
+  </g>
+  <!-- Divider -->
+  <line x1="260" y1="560" x2="1140" y2="560" stroke="#E5E7EB" stroke-width="1"/>
+  <!-- Evidence summary -->
+  <text x="260" y="600" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#2D2D3A">Evidence Summary</text>
+  <g transform="translate(260, 620)">
+    <rect width="860" height="100" rx="8" fill="#F8F9FA" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="15" y="28" font-family="Inter, sans-serif" font-size="12" fill="#4A4A5A">Strong problem-solving approach in distributed systems scenario.</text>
+    <text x="15" y="48" font-family="Inter, sans-serif" font-size="12" fill="#4A4A5A">Clear communication of trade-offs between consistency and availability.</text>
+    <text x="15" y="68" font-family="Inter, sans-serif" font-size="12" fill="#F58B44">Note: System design confidence was moderate. Adaptive follow-up recommended.</text>
+    <text x="15" y="88" font-family="Inter, sans-serif" font-size="12" fill="#4CAF7D">Follow-up completed. Confidence restored to acceptable level.</text>
+  </g>
+  <!-- Adaptive follow-up indicator -->
+  <g transform="translate(260, 750)">
+    <rect width="860" height="50" rx="8" fill="#4CAF7D" opacity="0.08" stroke="#4CAF7D" stroke-width="1"/>
+    <circle cx="25" cy="25" r="8" fill="#4CAF7D" opacity="0.3"/>
+    <text x="45" y="30" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#4CAF7D">Adaptive follow-up completed · All dimensions above confidence threshold</text>
+  </g>
+  <!-- Footer -->
+  <g transform="translate(260, 840)">
+    <line x1="0" y1="0" x2="880" y2="0" stroke="#E5E7EB" stroke-width="1"/>
+    <text y="30" font-family="Inter, sans-serif" font-size="11" fill="#6B6B7B">Report generated by LayersRank · Multi-model consensus with adaptive follow-up · Report ID: LR-2026-0215</text>
+    <!-- Brand bars -->
+    <rect x="0" y="50" width="60" height="4" rx="2" fill="#F5B941"/>
+    <rect x="65" y="50" width="60" height="4" rx="2" fill="#F58B44"/>
+    <rect x="130" y="50" width="60" height="4" rx="2" fill="#E85D4C"/>
+    <rect x="195" y="50" width="60" height="4" rx="2" fill="#4CAF7D"/>
+  </g>
+</svg>

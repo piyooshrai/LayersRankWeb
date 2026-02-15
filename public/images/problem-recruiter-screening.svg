@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8F9FA"/>
+      <stop offset="100%" stop-color="#E5E7EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="1050" fill="url(#bg2)"/>
+  <!-- Desk surface -->
+  <rect x="100" y="450" width="1200" height="500" rx="8" fill="#fff" stroke="#E5E7EB" stroke-width="2"/>
+  <!-- Laptop -->
+  <rect x="350" y="280" width="400" height="250" rx="12" fill="#2D2D3A"/>
+  <rect x="365" y="295" width="370" height="220" rx="4" fill="#1a1a2e"/>
+  <!-- Screen content - resume/application -->
+  <rect x="385" y="315" width="120" height="10" rx="3" fill="#6B6B7B" opacity="0.4"/>
+  <rect x="385" y="335" width="160" height="6" rx="3" fill="#6B6B7B" opacity="0.2"/>
+  <rect x="385" y="350" width="140" height="6" rx="3" fill="#6B6B7B" opacity="0.2"/>
+  <rect x="385" y="365" width="150" height="6" rx="3" fill="#6B6B7B" opacity="0.2"/>
+  <!-- Score bars on screen -->
+  <rect x="385" y="400" width="100" height="8" rx="4" fill="#E85D4C" opacity="0.6"/>
+  <rect x="385" y="415" width="130" height="8" rx="4" fill="#F5B941" opacity="0.6"/>
+  <rect x="385" y="430" width="80" height="8" rx="4" fill="#E85D4C" opacity="0.6"/>
+  <rect x="385" y="445" width="140" height="8" rx="4" fill="#4CAF7D" opacity="0.6"/>
+  <!-- Red X markers indicating rejections -->
+  <g transform="translate(560, 310)">
+    <circle r="12" fill="#E85D4C" opacity="0.2"/>
+    <line x1="-5" y1="-5" x2="5" y2="5" stroke="#E85D4C" stroke-width="2"/>
+    <line x1="5" y1="-5" x2="-5" y2="5" stroke="#E85D4C" stroke-width="2"/>
+  </g>
+  <g transform="translate(560, 350)">
+    <circle r="12" fill="#E85D4C" opacity="0.2"/>
+    <line x1="-5" y1="-5" x2="5" y2="5" stroke="#E85D4C" stroke-width="2"/>
+    <line x1="5" y1="-5" x2="-5" y2="5" stroke="#E85D4C" stroke-width="2"/>
+  </g>
+  <!-- Question mark - uncertainty -->
+  <g transform="translate(680, 380)">
+    <circle r="20" fill="#F58B44" opacity="0.15"/>
+    <text text-anchor="middle" dy="7" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#F58B44" opacity="0.7">?</text>
+  </g>
+  <!-- Stack of resumes -->
+  <rect x="850" y="330" width="180" height="220" rx="4" fill="#fff" stroke="#E5E7EB" stroke-width="1" transform="rotate(-5, 940, 440)"/>
+  <rect x="860" y="340" width="180" height="220" rx="4" fill="#fff" stroke="#E5E7EB" stroke-width="1" transform="rotate(-2, 950, 450)"/>
+  <rect x="870" y="350" width="180" height="220" rx="4" fill="#fff" stroke="#E5E7EB" stroke-width="1"/>
+  <!-- Resume lines -->
+  <rect x="890" y="375" width="80" height="8" rx="3" fill="#2D2D3A" opacity="0.3"/>
+  <rect x="890" y="395" width="140" height="5" rx="2" fill="#6B6B7B" opacity="0.15"/>
+  <rect x="890" y="408" width="120" height="5" rx="2" fill="#6B6B7B" opacity="0.15"/>
+  <rect x="890" y="421" width="130" height="5" rx="2" fill="#6B6B7B" opacity="0.15"/>
+  <rect x="890" y="445" width="60" height="5" rx="2" fill="#6B6B7B" opacity="0.15"/>
+  <rect x="890" y="458" width="100" height="5" rx="2" fill="#6B6B7B" opacity="0.15"/>
+  <!-- Person silhouette - recruiter -->
+  <circle cx="280" cy="350" r="50" fill="#6B6B7B" opacity="0.15"/>
+  <rect x="235" y="405" width="90" height="120" rx="18" fill="#6B6B7B" opacity="0.1"/>
+  <!-- Coffee mug -->
+  <rect x="180" y="470" width="35" height="40" rx="4" fill="#F5B941" opacity="0.25"/>
+  <rect x="215" y="480" width="12" height="20" rx="6" fill="none" stroke="#F5B941" opacity="0.2" stroke-width="2"/>
+  <!-- Frustrated thought indicators -->
+  <text x="700" y="180" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#2D2D3A" opacity="0.5">68% of recruiter time wasted on wrong candidates</text>
+</svg>
