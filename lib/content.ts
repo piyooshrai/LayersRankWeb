@@ -1,12 +1,12 @@
 import type { ComponentType } from 'react';
-import PostCalibration from '@/content/blog/calibration-playbook.tsx';
-import PostFuzzy from '@/content/blog/fuzzy-logic-recruitment-guide.tsx';
-import PostExplainable from '@/content/blog/explainable-ai-hiring-auditability.tsx';
-import PostGcc from '@/content/blog/gcc-hiring-standards-india.tsx';
-import PostConfidence from '@/content/blog/confidence-weighted-ranking.tsx';
-import PostOps from '@/content/blog/interview-operations-at-scale.tsx';
-import WhitepaperTrq from '@/content/whitepapers/tr-q-rofns-hiring-whitepaper.tsx';
-import WhitepaperGcc from '@/content/whitepapers/gcc-hiring-rigor-benchmark.tsx';
+import PostCalibration from '@/content/blog/calibration-playbook';
+import PostFuzzy from '@/content/blog/fuzzy-logic-recruitment-guide';
+import PostExplainable from '@/content/blog/explainable-ai-hiring-auditability';
+import PostGcc from '@/content/blog/gcc-hiring-standards-india';
+import PostConfidence from '@/content/blog/confidence-weighted-ranking';
+import PostOps from '@/content/blog/interview-operations-at-scale';
+import WhitepaperTrq from '@/content/whitepapers/tr-q-rofns-hiring-whitepaper';
+import WhitepaperGcc from '@/content/whitepapers/gcc-hiring-rigor-benchmark';
 
 export type PostMeta = {
   slug: string;
