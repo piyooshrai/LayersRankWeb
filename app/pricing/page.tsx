@@ -27,7 +27,7 @@ export default function PricingPage() {
           <tr><th className="p-3">Capability</th><th className="p-3">Growth</th><th className="p-3">Enterprise</th></tr>
         </thead>
         <tbody>
-          <tr className="border-t"><td className="p-3">Rigor model depth</td><td className="p-3">Core fuzzy scoring</td><td className="p-3">Advanced TR-q-ROFN tuning</td></tr>
+          <tr className="border-t"><td className="p-3">Rigor model depth</td><td className="p-3">Core structured scoring</td><td className="p-3">Advanced confidence model tuning</td></tr>
           <tr className="border-t"><td className="p-3">Auditability</td><td className="p-3">Standard trails</td><td className="p-3">HQ-grade audit dossiers</td></tr>
           <tr className="border-t"><td className="p-3">Scale</td><td className="p-3">Up to mid-volume</td><td className="p-3">10,000+ resume pipelines</td></tr>
           <tr className="border-t"><td className="p-3">Integrations</td><td className="p-3">ATS + coding tools</td><td className="p-3">ATS + interview stack + references API</td></tr>

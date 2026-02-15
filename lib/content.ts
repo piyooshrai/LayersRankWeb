@@ -12,7 +12,7 @@ export type PostMeta = {
   slug: string;
   title: string;
   description: string;
-  category: 'Explainable Hiring' | 'Fuzzy Logic & Scoring' | 'GCC Standards' | 'Interview Operations';
+  category: 'Explainable Hiring' | 'Structured Scoring' | 'GCC Standards' | 'Interview Operations';
   date: string;
   readingTime: string;
   relatedSolution: '/solutions/gcc' | '/solutions/startups';
@@ -32,9 +32,9 @@ export const blogPosts: PostMeta[] = [
   },
   {
     slug: 'fuzzy-logic-recruitment-guide',
-    title: 'Fuzzy Logic Recruitment: Replacing Hard Cutoffs with Confidence Bands',
-    description: 'How fuzzy logic improves hiring accuracy by modeling interviewer variance and partial evidence.',
-    category: 'Fuzzy Logic & Scoring',
+    title: 'Structured Interview Scoring: Replace Hard Cutoffs with Confidence Bands',
+    description: 'How structured scoring improves hiring accuracy by modeling interviewer variance and incomplete evidence.',
+    category: 'Structured Scoring',
     date: '2026-01-10',
     readingTime: '9 min read',
     relatedSolution: '/solutions/startups',
@@ -54,7 +54,7 @@ export const blogPosts: PostMeta[] = [
     slug: 'confidence-weighted-ranking',
     title: 'Confidence-Weighted Candidate Ranking for Enterprise Recruiting',
     description: 'A scoring architecture that keeps uncertainty visible so teams can rank candidates with defensible rigor.',
-    category: 'Fuzzy Logic & Scoring',
+    category: 'Structured Scoring',
     date: '2026-01-18',
     readingTime: '10 min read',
     relatedSolution: '/solutions/gcc',
@@ -89,7 +89,7 @@ export function getPost(slug: string) {
 export const whitepapers = [
   {
     slug: 'tr-q-rofns-hiring-whitepaper',
-    title: 'TR-q-ROFNs for Explainable Candidate Ranking',
+    title: 'Candidate Ranking Confidence Model (Technical Appendix)',
     description: 'Mathematical foundations and implementation notes for confidence-weighted hiring pipelines.',
     component: WhitepaperTrq
   },

@@ -5,11 +5,11 @@ import { TopicCluster } from '@/components/topic-cluster';
 
 export const metadata = makeMetadata({
   title: 'Hiring Science Blog | LayersRank',
-  description: 'Explainable hiring, fuzzy logic scoring, GCC standards, and interview operations articles.',
+  description: 'Explainable hiring, structured scoring, GCC standards, and interview operations articles.',
   path: '/resources/blog'
 });
 
-const categoryOrder = ['Explainable Hiring', 'Fuzzy Logic & Scoring', 'GCC Standards', 'Interview Operations'];
+const categoryOrder = ['Explainable Hiring', 'Structured Scoring', 'GCC Standards', 'Interview Operations'];
 
 export default function BlogListingPage() {
   return (

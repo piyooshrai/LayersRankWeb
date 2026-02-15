@@ -11,7 +11,7 @@ export default function ResourcesPage() {
   return (
     <div className="mx-auto max-w-6xl space-y-6 px-6 py-16">
       <h1 className="text-4xl font-semibold text-navy">Resources Hub</h1>
-      <p className="text-slate-700">Research-backed guidance on explainable hiring, fuzzy logic recruitment, GCC standards, and interview operations.</p>
+      <p className="text-slate-700">Practical guidance on structured interview scoring, hiring consistency, GCC standards, and interview operations.</p>
       <div className="grid gap-6 md:grid-cols-2">
         <Link href="/resources/blog" className="rounded-xl border border-slate-200 bg-white p-6">
           <h2 className="text-2xl font-semibold text-navy">Blog</h2>

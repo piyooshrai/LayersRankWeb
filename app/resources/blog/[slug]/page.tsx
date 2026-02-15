@@ -32,7 +32,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <div className="rounded-xl border border-slate-200 bg-white p-5 text-sm">
         <p>Continue reading:</p>
         <ul className="mt-2 list-disc pl-5">
-          <li><Link href="/science" className="text-navy underline">Science deep dive on TR-q-ROFNs</Link></li>
+          <li><Link href="/science" className="text-navy underline">Science guide: why traditional hiring scores fail</Link></li>
           <li><Link href={post.relatedSolution} className="text-navy underline">Relevant solution page</Link></li>
         </ul>
       </div>

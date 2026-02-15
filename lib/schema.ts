@@ -46,5 +46,5 @@ export const softwareApplicationSchema = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   description:
-    'Confidence-weighted hiring platform using fuzzy logic and explainable ranking for enterprise and GCC hiring workflows.'
+    'Confidence-weighted hiring platform using structured scoring and explainable ranking for enterprise and GCC hiring workflows.'
 };
