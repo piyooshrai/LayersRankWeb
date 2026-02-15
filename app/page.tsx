@@ -14,7 +14,7 @@ function CtaBand() {
     <div className="rounded-2xl border border-slate-700 bg-slate-900/50 p-6 text-center">
       <h3 className="text-2xl font-semibold">Need consistency across every interview panel?</h3>
       <p className="mx-auto mt-2 max-w-2xl text-slate-300">
-        See where your process is leaking quality, where interviewers drift, and where scoring confidence is too weak for high-stakes hiring decisions.
+        Identify where decision quality is leaking, where interviewer disagreement is rising, and where shortlist confidence is too weak for critical hiring approvals.
       </p>
       <Link href="/company" className="mt-4 inline-block rounded-md bg-confidence px-5 py-3 font-medium text-navy">
         Book a Rigor Audit
@@ -28,11 +28,11 @@ export default function HomePage() {
     <div className="bg-navy text-white">
       <section className="quant-grid chart-line mx-auto grid max-w-6xl gap-8 px-6 py-20 md:grid-cols-2">
         <div className="space-y-6">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-slate-300">Hiring quality system for recruiters and leaders</p>
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-slate-300">Decision system for high-stakes hiring operations</p>
           <h1 className="text-5xl font-semibold leading-tight">Stop Guessing. Start Ranking.</h1>
           <p className="max-w-xl text-lg text-slate-200">
-            Build consistent interview decisions across recruiters, hiring managers, and panel members.
-            Use structured scoring, reduce bias, and make shortlist calls leadership can trust.
+            LayersRank helps recruiting and engineering leaders rank candidates with confidence,
+            reduce panel conflict, and move from slow score debates to faster, audit-ready approvals.
           </p>
           <div className="flex gap-4">
             <Link href="/company" className="rounded-md bg-confidence px-5 py-3 font-medium text-navy">
@@ -52,36 +52,36 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl space-y-12 px-6 py-16">
         <div className="grid items-center gap-8 md:grid-cols-2">
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold">Hiring decisions are inconsistent and risky</h2>
+            <h2 className="text-3xl font-semibold">Hiring decisions are inconsistent and expensive</h2>
             <p className="text-slate-200">
-              Different interviewers score the same candidate differently.
-              Resume screening can miss strong talent while polished profiles move ahead.
+              Bad hires delay delivery and reduce team productivity.
+              Offer dropouts disrupt workforce planning after approvals are complete.
             </p>
             <p className="text-slate-200">
-              Subjectivity enters through unstructured interviews, pedigree bias, and rushed debriefs.
-              The outcome is decision variance right where quality matters most.
+              Panel disagreement slows decisions, creates extra interview loops, and burns engineering bandwidth.
+              Leadership loses confidence when shortlist quality cannot be defended clearly.
             </p>
           </div>
           <HeroPhoto
             src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1400&q=80"
-            alt="Indian interview panel discussing candidate evaluation in a meeting room"
+            alt="Indian interview panel discussing candidate decisions in a corporate meeting room"
           />
         </div>
 
         <div className="grid items-center gap-8 md:grid-cols-2">
           <HeroPhoto
             src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=80"
-            alt="Recruiter reviewing multiple resumes and hiring notes at a desk"
+            alt="Recruiter and hiring manager reviewing candidate pipeline and interview scorecards"
           />
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold">Cost of bad hiring</h2>
+            <h2 className="text-3xl font-semibold">What makes LayersRank different</h2>
             <p className="text-slate-200">
-              Wrong hires reduce productivity, create delivery delays, and increase manager burden.
-              Rehiring repeats sourcing, interviewing, approvals, and onboarding costs.
+              LayersRank ranks candidates instead of relying on flat score averages.
+              Each decision includes a confidence indicator that shows whether evidence is strong or noisy.
             </p>
             <p className="text-slate-200">
-              The hidden loss is interview bandwidth.
-              Senior engineers spend hours in loops that do not improve decision quality.
+              The platform separates strong hiring signals from interviewer noise,
+              then generates audit-ready decision summaries that leadership can review and approve faster.
             </p>
           </div>
         </div>
@@ -90,36 +90,36 @@ export default function HomePage() {
 
         <div className="grid items-center gap-8 md:grid-cols-2">
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold">What companies need now</h2>
+            <h2 className="text-3xl font-semibold">What changes when you rank with confidence</h2>
             <p className="text-slate-200">
-              Teams need structured interview scoring, shared evaluation criteria, and interviewer calibration.
-              Leaders need confidence that shortlisted candidates are comparable and decision-ready.
+              Every candidate is compared on the same dimensions, which improves shortlist quality and reduces subjective drift.
+              Confidence indicators highlight where evidence is weak before a final decision is made.
             </p>
             <p className="text-slate-200">
-              Recruiters need faster debriefs with less feedback conflict.
-              Leadership needs clear evidence trails for final approvals.
+              Panels align faster, interviewer conflict drops, and leadership reviews final recommendations with less back-and-forth.
+              The result is more confident hiring decisions across every critical role.
             </p>
           </div>
           <HeroPhoto
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80"
-            alt="Hiring team collaborating on structured candidate evaluation in an Indian corporate office"
+            alt="Hiring leadership team aligning on ranked candidates with confidence indicators"
           />
         </div>
 
         <div className="grid items-center gap-8 md:grid-cols-2">
           <HeroPhoto
             src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=80"
-            alt="Large engineering hiring environment in India with recruiters and managers reviewing pipeline"
+            alt="Large Indian corporate hiring environment with engineering leaders and recruiters"
           />
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold">GCC hiring challenges</h2>
+            <h2 className="text-3xl font-semibold">GCC hiring at scale requires decision control</h2>
             <p className="text-slate-200">
-              GCC teams in Bangalore, Hyderabad, Pune, and NCR must hire at high volume while meeting global quality expectations.
-              Inconsistent scoring across cities slows approvals and increases risk.
+              GCC teams hiring hundreds of engineers per quarter across Bangalore, Hyderabad, Pune, and NCR need cross-city interview consistency.
+              Without it, approval cycles stall and quality variance grows.
             </p>
             <p className="text-slate-200">
-              LayersRank helps teams move beyond pedigree-only filters, detect offer-drop risk earlier,
-              and produce decision packs that global HQ can review quickly.
+              LayersRank supports faster HQ approval cycles, reduces dependency on pedigree filters,
+              and helps hiring leaders scale with stronger decision confidence.
             </p>
             <div className="flex flex-wrap gap-4 pt-2 text-sm">
               <Link href="/science" className="underline">Why traditional scores fail</Link>
@@ -129,12 +129,15 @@ export default function HomePage() {
           </div>
         </div>
 
-        <CtaBand />
-
         <div className="rounded-2xl border border-slate-700 p-6">
-          <h2 className="text-3xl font-semibold">Social proof placeholders</h2>
-          <p className="mt-3 text-slate-200">“Used for high-volume engineering hiring.”</p>
-          <p className="text-slate-200">“Designed for GCC-scale recruitment.”</p>
+          <h2 className="text-3xl font-semibold">Business outcomes hiring leaders track</h2>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-slate-200">
+            <li>Faster final approvals with clearer decision context.</li>
+            <li>Fewer interview loops caused by conflicting panel feedback.</li>
+            <li>Reduced interviewer conflict in debrief meetings.</li>
+            <li>More confident hiring decisions on critical engineering roles.</li>
+            <li>Better shortlist quality for recruiters and hiring managers.</li>
+          </ul>
         </div>
       </section>
     </div>
