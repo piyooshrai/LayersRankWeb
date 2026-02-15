@@ -103,7 +103,7 @@ export default function StartupsPage() {
         <div className="flex flex-wrap gap-4 pt-2 text-sm">
           <Link href="/science" className="text-navy underline">Why traditional scores fail</Link>
           <Link href="/solutions/gcc" className="text-navy underline">GCC hiring at scale</Link>
-          <Link href="/company" className="text-navy underline">Book a Rigor Audit</Link>
+          <Link href="/demo" className="text-navy underline">Book a Demo</Link>
         </div>
       </Section>
     </div>

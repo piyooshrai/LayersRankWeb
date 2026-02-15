@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
 :root {
   color-scheme: light;
+  --yellow: #F5B941;
+  --orange: #F58B44;
+  --red: #E85D4C;
+  --green: #4CAF7D;
+  --ink: #2D2D3A;
+  --ink-light: #4A4A5A;
+  --ink-muted: #6B6B7B;
+  --paper: #FFFFFF;
+  --paper-off: #F8F9FA;
+  --border: #E5E7EB;
 }
 
 body {
-  background-color: #f8fafc;
-  color: #0f172a;
+  background-color: var(--paper);
+  color: var(--ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -20,5 +32,15 @@ body {
 }
 
 .chart-line {
-  background: linear-gradient(120deg, rgba(18, 185, 129, 0.25), rgba(8, 20, 39, 0.05));
+  background: linear-gradient(120deg, rgba(76, 175, 125, 0.15), rgba(45, 45, 58, 0.05));
+}
+
+.gradient-cta {
+  background: linear-gradient(135deg, var(--yellow) 0%, var(--orange) 100%);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }

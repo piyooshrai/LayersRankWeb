@@ -143,7 +143,7 @@ export default function GccPage() {
         <div className="flex flex-wrap gap-4 pt-2 text-sm">
           <Link href="/science" className="text-navy underline">Why traditional scores fail</Link>
           <Link href="/solutions/startups" className="text-navy underline">Startup hiring workflows</Link>
-          <Link href="/company" className="text-navy underline">Book a Rigor Audit</Link>
+          <Link href="/demo" className="text-navy underline">Book a Demo</Link>
         </div>
       </Section>
     </div>

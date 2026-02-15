@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { blogPosts, whitepapers } from '@/lib/content';
 import { siteConfig } from '@/lib/site';
 
-const staticRoutes = ['','/product','/science','/solutions/gcc','/solutions/startups','/resources','/resources/blog','/resources/whitepapers','/pricing','/company','/legal/privacy','/legal/terms'];
+const staticRoutes = ['','/product','/science','/solutions/gcc','/solutions/startups','/resources','/resources/blog','/resources/whitepapers','/pricing','/company','/compare/hirevue','/demo','/legal/privacy','/legal/terms'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries = staticRoutes.map((route) => ({
