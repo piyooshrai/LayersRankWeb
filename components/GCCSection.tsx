@@ -60,7 +60,7 @@ export function GCCSection() {
           {/* Image */}
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-gray-700">
             <Image
-              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=80"
+              src="/images/gcc-bangalore-office-team.svg"
               alt="Large Indian engineering team meeting in a modern tech office in Bangalore"
               fill
               className="object-cover"

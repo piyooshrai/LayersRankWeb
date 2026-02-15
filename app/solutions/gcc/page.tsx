@@ -15,7 +15,7 @@ export default function GccPage() {
     <div className="mx-auto max-w-6xl space-y-8 px-6 py-16">
       <h1 className="text-4xl font-semibold text-navy">Global Quality, Local Scale.</h1>
       <HeroPhoto
-        src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80"
+        src="/images/solutions-gcc-hiring-panel.svg"
         alt="Indian hiring managers and recruiters discussing engineering interview results in a corporate boardroom"
       />
 

@@ -42,7 +42,7 @@ export function Hero() {
         <div className="relative">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-gray-700 shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=1400&q=80"
+              src="/images/hero-indian-interview-panel.svg"
               alt="Indian woman professional in a modern office interview setting"
               fill
               className="object-cover"

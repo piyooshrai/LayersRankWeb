@@ -15,7 +15,7 @@ export default function StartupsPage() {
     <div className="mx-auto max-w-6xl space-y-8 px-6 py-16">
       <h1 className="text-4xl font-semibold text-navy">Speed without losing rigor.</h1>
       <HeroPhoto
-        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80"
+        src="/images/solutions-startups-team.svg"
         alt="Startup engineering leaders and recruiters reviewing candidate interview outcomes in India"
       />
 

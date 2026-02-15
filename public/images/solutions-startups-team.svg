@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8F9FA"/>
+      <stop offset="100%" stop-color="#E5E7EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="1050" fill="url(#sbg)"/>
+  <!-- Modern coworking space feel -->
+  <!-- Desks with laptops -->
+  <g transform="translate(200, 300)">
+    <rect width="350" height="200" rx="8" fill="#fff" stroke="#E5E7EB" stroke-width="2"/>
+    <!-- Laptop 1 -->
+    <rect x="40" y="40" width="120" height="80" rx="6" fill="#2D2D3A"/>
+    <rect x="47" y="47" width="106" height="63" rx="2" fill="#1a1a2e"/>
+    <!-- Score on screen -->
+    <rect x="55" y="60" width="60" height="5" rx="2" fill="#4CAF7D" opacity="0.5"/>
+    <rect x="55" y="72" width="40" height="5" rx="2" fill="#F5B941" opacity="0.5"/>
+    <rect x="55" y="84" width="50" height="5" rx="2" fill="#4CAF7D" opacity="0.5"/>
+    <!-- Person silhouette -->
+    <circle cx="100" cy="0" r="30" fill="#F5B941" opacity="0.25"/>
+    <!-- Laptop 2 -->
+    <rect x="200" y="50" width="110" height="70" rx="6" fill="#2D2D3A"/>
+    <rect x="207" y="57" width="96" height="55" rx="2" fill="#1a1a2e"/>
+    <rect x="215" y="68" width="50" height="5" rx="2" fill="#F58B44" opacity="0.5"/>
+    <rect x="215" y="80" width="35" height="5" rx="2" fill="#4CAF7D" opacity="0.5"/>
+    <circle cx="260" cy="10" r="30" fill="#6B6B7B" opacity="0.2"/>
+  </g>
+  <!-- Standing desk area -->
+  <g transform="translate(700, 250)">
+    <rect width="450" height="250" rx="8" fill="#fff" stroke="#E5E7EB" stroke-width="2"/>
+    <!-- Big monitor -->
+    <rect x="60" y="20" width="200" height="130" rx="6" fill="#2D2D3A"/>
+    <rect x="67" y="27" width="186" height="110" rx="2" fill="#1a1a2e"/>
+    <!-- Interview interface on screen -->
+    <text x="100" y="55" font-family="Inter, sans-serif" font-size="10" fill="#F5B941" opacity="0.7">Interview Panel</text>
+    <!-- Video feeds -->
+    <rect x="80" y="62" width="40" height="30" rx="3" fill="#4A4A5A"/>
+    <rect x="130" y="62" width="40" height="30" rx="3" fill="#4A4A5A"/>
+    <rect x="80" y="100" width="40" height="30" rx="3" fill="#4A4A5A"/>
+    <rect x="130" y="100" width="90" height="30" rx="3" fill="#4CAF7D" opacity="0.15"/>
+    <text x="175" y="120" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#4CAF7D">Scoring...</text>
+    <!-- Person at standing desk -->
+    <circle cx="340" cy="60" r="30" fill="#4CAF7D" opacity="0.2"/>
+    <rect x="315" y="95" width="50" height="80" rx="10" fill="#4CAF7D" opacity="0.1"/>
+    <!-- Second person -->
+    <circle cx="400" cy="80" r="25" fill="#6B6B7B" opacity="0.15"/>
+  </g>
+  <!-- Speed indicators -->
+  <g transform="translate(200, 600)">
+    <rect width="1000" height="150" rx="12" fill="#fff" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="40" y="40" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#2D2D3A">Hiring Velocity</text>
+    <!-- Speed bar -->
+    <rect x="40" y="60" width="920" height="16" rx="8" fill="#E5E7EB"/>
+    <rect x="40" y="60" width="700" height="16" rx="8" fill="#4CAF7D" opacity="0.5"/>
+    <!-- Milestones -->
+    <g font-family="JetBrains Mono, monospace" font-size="10" fill="#6B6B7B">
+      <text x="40" y="100">Week 1</text>
+      <text x="240" y="100">Week 2</text>
+      <text x="440" y="100">Week 3</text>
+      <text x="640" y="100">Week 4</text>
+      <text x="840" y="100">Hired</text>
+    </g>
+    <g fill="#4CAF7D" opacity="0.4">
+      <circle cx="40" cy="68" r="6"/>
+      <circle cx="270" cy="68" r="6"/>
+      <circle cx="500" cy="68" r="6"/>
+      <circle cx="700" cy="68" r="8" fill="#4CAF7D" opacity="0.6"/>
+    </g>
+    <!-- Labels -->
+    <text x="40" y="130" font-family="Inter, sans-serif" font-size="11" fill="#4CAF7D">Structured scoring reduces time-to-decision by 40%</text>
+  </g>
+  <!-- Startup energy indicators -->
+  <g transform="translate(200, 820)">
+    <rect width="480" height="80" rx="10" fill="#F5B941" opacity="0.08" stroke="#F5B941" stroke-width="1"/>
+    <text x="25" y="35" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#F5B941">Fast decisions</text>
+    <text x="25" y="55" font-family="Inter, sans-serif" font-size="11" fill="#6B6B7B">Move quickly when evidence is strong</text>
+  </g>
+  <g transform="translate(720, 820)">
+    <rect width="480" height="80" rx="10" fill="#4CAF7D" opacity="0.08" stroke="#4CAF7D" stroke-width="1"/>
+    <text x="25" y="35" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#4CAF7D">High confidence</text>
+    <text x="25" y="55" font-family="Inter, sans-serif" font-size="11" fill="#6B6B7B">Every hire backed by structured evidence</text>
+  </g>
+</svg>
