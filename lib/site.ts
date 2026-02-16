@@ -34,8 +34,6 @@ export const navDropdowns: NavDropdown[] = [
       { href: '/product/adaptive-questioning', label: 'Adaptive Follow-Up', description: 'Uncertainty triggers clarifying questions', featured: true },
       { href: '/product/integrity-detection', label: 'Integrity Detection', description: 'Flag inconsistencies automatically' },
       { href: '/product/candidate-reports', label: 'Reports', description: 'Audit-ready candidate dossiers' },
-      { href: '/product/question-bank', label: 'Question Bank', description: '1,000+ vetted role-specific questions' },
-      { href: '/product/integrations', label: 'Integrations', description: 'Connect with your ATS and HRIS' },
     ],
   },
   {
