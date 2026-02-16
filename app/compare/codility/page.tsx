@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA, ComparisonTable } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'LayersRank vs Codility | Complete Candidate Evaluation',
@@ -28,6 +29,12 @@ export default function CompareCodilityPage() {
         title="LayersRank vs Codility"
         description="Codility measures coding speed. LayersRank measures whether someone can actually do the job."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Complete evaluation vs code-only testing" search="coding assessment platform comparison" />
+        </div>
+      </section>
 
       {/* Comparison Table */}
       <section className="bg-paper py-20">

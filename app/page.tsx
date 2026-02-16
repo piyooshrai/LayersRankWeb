@@ -1,4 +1,5 @@
 import { Hero } from '@/components/Hero';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { TrustBar } from '@/components/TrustBar';
 import { ProblemSection } from '@/components/ProblemSection';
 import { HowItWorks } from '@/components/HowItWorks';
@@ -20,6 +21,11 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <section className="bg-ink px-6 pb-20">
+        <div className="mx-auto max-w-7xl">
+          <ImagePlaceholder label="Indian hiring team reviewing structured interview results" search="indian professional interview office" />
+        </div>
+      </section>
       <TrustBar />
       <ProblemSection />
       <HowItWorks />

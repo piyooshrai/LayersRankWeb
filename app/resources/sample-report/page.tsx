@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { PageHero, PageCTA } from '@/components/page-sections';
 
 export const metadata = makeMetadata({
@@ -36,6 +37,12 @@ export default function SampleReportPage() {
         title="See a Real Candidate Report"
         description="Full candidate evaluation report with scores, confidence levels, and evidence trails. This is what your hiring managers will see."
       />
+
+      <section className="bg-paper-off px-6 py-12">
+        <div className="mx-auto max-w-4xl">
+          <ImagePlaceholder label="Interactive sample candidate report" search="candidate evaluation report analytics" />
+        </div>
+      </section>
 
       {/* Interactive Report */}
       <section className="bg-paper py-20">

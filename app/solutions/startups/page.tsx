@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { HeroPhoto } from '@/components/hero-photo';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { Section } from '@/components/section';
 import { makeMetadata } from '@/lib/seo';
 
@@ -18,6 +19,12 @@ export default function StartupsPage() {
         src="/images/solutions-startups-team.svg"
         alt="Startup engineering leaders and recruiters reviewing candidate interview outcomes in India"
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Small startup team in modern office" search="indian startup team small office" />
+        </div>
+      </section>
 
       <Section title="Why startup hiring breaks during growth">
         <p>

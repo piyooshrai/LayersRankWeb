@@ -1,5 +1,6 @@
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Fuzzy Logic in Recruitment | LayersRank',
@@ -16,6 +17,12 @@ export default function FuzzyLogicPage() {
         title="The Mathematics of Uncertainty"
         description="Hiring decisions are inherently uncertain. LayersRank uses fuzzy logic to model that uncertainty mathematically, producing scores you can trust and confidence bands that tell you when to dig deeper."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Mathematical framework visualization" search="mathematical model fuzzy logic diagram" />
+        </div>
+      </section>
 
       {/* What is Fuzzy Logic */}
       <section className="bg-paper py-20">

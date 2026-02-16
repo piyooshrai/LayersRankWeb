@@ -1,5 +1,6 @@
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Removing Pedigree Bias in Hiring | LayersRank',
@@ -16,6 +17,12 @@ export default function BiasMitigationPage() {
         title="Evaluate Capability, Not Background"
         description="Traditional hiring is riddled with biases that penalize non-traditional candidates and reward pedigree over performance. LayersRank is built to reduce these biases at every stage of the evaluation process."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Diverse candidates evaluated fairly" search="diverse team equal opportunity hiring" />
+        </div>
+      </section>
 
       {/* How Bias Enters Hiring */}
       <section className="bg-paper py-20">

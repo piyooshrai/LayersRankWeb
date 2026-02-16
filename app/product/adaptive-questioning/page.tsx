@@ -1,5 +1,6 @@
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA, FeatureCard, FeatureGrid } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Adaptive Follow-Up Questions | LayersRank',
@@ -72,6 +73,12 @@ export default function AdaptiveQuestioningPage() {
         title="When We're Not Sure, We Ask"
         description="Most systems score every answer once and move on -- even when the signal is unclear. LayersRank detects ambiguity in real time and generates targeted follow-up questions to resolve it before producing a final score."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Interview interface showing follow-up question" search="chat interface ai follow-up question" />
+        </div>
+      </section>
 
       {/* How It Works */}
       <section className="bg-paper py-20">

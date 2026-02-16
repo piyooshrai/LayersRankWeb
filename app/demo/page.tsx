@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { makeMetadata } from '@/lib/seo';
 
 export const metadata = makeMetadata({
@@ -66,6 +67,8 @@ export default function DemoPage() {
             </div>
 
             {/* Right: Form */}
+            <div className="space-y-8">
+            <ImagePlaceholder label="Platform demo preview" search="software demo presentation screen" />
             <div className="rounded-2xl border border-gray-700 bg-gray-800/50 p-8">
               <h2 className="text-xl font-bold">Request a demo</h2>
               <p className="mt-2 text-sm text-gray-400">
@@ -144,6 +147,7 @@ export default function DemoPage() {
                   <Link href="/legal/privacy" className="underline">Privacy Policy</Link>.
                 </p>
               </form>
+            </div>
             </div>
           </div>
         </div>

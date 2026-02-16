@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { PageHero, PageCTA } from '@/components/page-sections';
 import { makeMetadata } from '@/lib/seo';
 
@@ -22,6 +23,12 @@ export default function EnterprisePage() {
         secondaryCta="View Pricing"
         secondaryCtaHref="/pricing"
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Enterprise office, distributed team" search="corporate enterprise office hiring" />
+        </div>
+      </section>
 
       {/* Enterprise Challenges — light bg */}
       <section className="bg-paper py-20">

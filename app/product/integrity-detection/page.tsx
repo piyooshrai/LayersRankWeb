@@ -1,5 +1,6 @@
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA, FeatureCard, FeatureGrid } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Integrity Detection | LayersRank',
@@ -90,6 +91,12 @@ export default function IntegrityDetectionPage() {
         title="Trust the Response. Verify the Process."
         description="Integrity detection monitors behavioral signals during assessments to ensure responses are authentic. It does not auto-reject anyone -- it adjusts confidence and flags responses for human review."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Interface showing integrity indicators" search="security verification dashboard" />
+        </div>
+      </section>
 
       {/* What We Track */}
       <section className="bg-paper py-20">

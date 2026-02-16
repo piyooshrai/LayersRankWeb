@@ -1,5 +1,6 @@
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA, FeatureCard, FeatureGrid } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Scores You Can Actually Trust | LayersRank',
@@ -57,6 +58,12 @@ export default function ConfidenceScoringPage() {
         title="Scores You Can Actually Trust"
         description="Most scoring systems give you a number. LayersRank gives you a number plus a confidence level -- so you know when evidence is strong and when more signal is needed before making a decision."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Two score displays — confident vs uncertain" search="data visualization confidence metrics" />
+        </div>
+      </section>
 
       {/* The Problem with Flat Scores */}
       <section className="bg-paper py-20">
@@ -177,6 +184,7 @@ export default function ConfidenceScoringPage() {
           <p className="mt-2 max-w-2xl text-ink-light">
             Every candidate report includes dimension-level scores with confidence bands. At a glance, you know where signal is strong and where follow-up is warranted.
           </p>
+          <ImagePlaceholder label="Sample report showing confidence bands" search="analytics dashboard confidence scores" />
           <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200">
             <table className="w-full text-sm">
               <thead>

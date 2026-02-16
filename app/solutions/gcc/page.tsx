@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { HeroPhoto } from '@/components/hero-photo';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { Section } from '@/components/section';
 import { makeMetadata } from '@/lib/seo';
 
@@ -18,6 +19,12 @@ export default function GccPage() {
         src="/images/solutions-gcc-hiring-panel.svg"
         alt="Indian hiring managers and recruiters discussing engineering interview results in a corporate boardroom"
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Indian tech office, large engineering team" search="bangalore tech office team meeting" />
+        </div>
+      </section>
 
       <Section title="Why GCC hiring programs struggle at scale">
         <p>

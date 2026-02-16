@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { PageHero, PageCTA } from '@/components/page-sections';
 import { makeMetadata } from '@/lib/seo';
 
@@ -45,6 +46,12 @@ export default function IndiaPage() {
         secondaryCta="View Solutions for GCCs"
         secondaryCtaHref="/solutions/gcc"
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Indian office setting with tech professionals" search="indian tech professionals office bangalore" />
+        </div>
+      </section>
 
       {/* India-Specific Features — light bg */}
       <section className="bg-paper py-20">

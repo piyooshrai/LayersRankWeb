@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { PageHero, PageCTA } from '@/components/page-sections';
 import { makeMetadata } from '@/lib/seo';
 
@@ -71,6 +72,12 @@ export default function TechnicalHiringPage() {
         secondaryCta="See the Science"
         secondaryCtaHref="/science"
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Engineers in technical discussion" search="software engineers technical discussion" />
+        </div>
+      </section>
 
       {/* What We Assess — light bg */}
       <section className="bg-paper py-20">

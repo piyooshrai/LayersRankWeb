@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { PageHero, PageCTA } from '@/components/page-sections';
 import { makeMetadata } from '@/lib/seo';
 
@@ -20,6 +21,12 @@ export default function AgenciesPage() {
         primaryCta="Partner with LayersRank"
         primaryCtaHref="/demo"
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Recruitment agency team reviewing candidates" search="recruitment agency staffing professionals" />
+        </div>
+      </section>
 
       {/* Agency Benefits — light bg */}
       <section className="bg-paper py-20">
