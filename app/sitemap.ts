@@ -2,7 +2,49 @@ import type { MetadataRoute } from 'next';
 import { blogPosts, whitepapers } from '@/lib/content';
 import { siteConfig } from '@/lib/site';
 
-const staticRoutes = ['','/product','/science','/solutions/gcc','/solutions/startups','/resources','/resources/blog','/resources/whitepapers','/pricing','/company','/compare/hirevue','/demo','/legal/privacy','/legal/terms'];
+const staticRoutes = [
+  '',
+  '/product',
+  '/product/structured-interviews',
+  '/product/confidence-scoring',
+  '/product/adaptive-questioning',
+  '/product/integrity-detection',
+  '/product/candidate-reports',
+  '/product/question-bank',
+  '/product/integrations',
+  '/science',
+  '/science/fuzzy-logic',
+  '/science/explainability',
+  '/science/bias-mitigation',
+  '/solutions/gcc',
+  '/solutions/startups',
+  '/solutions/enterprise',
+  '/solutions/agencies',
+  '/solutions/technical-hiring',
+  '/solutions/campus-hiring',
+  '/solutions/india',
+  '/solutions/middle-east',
+  '/compare/hirevue',
+  '/compare/hackerrank',
+  '/compare/codility',
+  '/compare/traditional-interviews',
+  '/resources',
+  '/resources/blog',
+  '/resources/whitepapers',
+  '/resources/case-studies',
+  '/resources/roi-calculator',
+  '/resources/sample-report',
+  '/pricing',
+  '/company',
+  '/about',
+  '/careers',
+  '/contact',
+  '/demo',
+  '/security',
+  '/legal/privacy',
+  '/legal/terms',
+  '/legal/ai-ethics',
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries = staticRoutes.map((route) => ({
