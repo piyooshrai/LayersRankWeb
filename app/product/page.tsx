@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/json-ld';
 
+
 export const metadata = makeMetadata({
   title: 'Product Overview | LayersRank Structured Interview Platform',
   description:
