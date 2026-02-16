@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { TopicCluster } from '@/components/topic-cluster';
 import { JsonLd } from '@/components/json-ld';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Why Traditional Hiring Scores Fail | LayersRank',
@@ -50,6 +51,12 @@ export default function SciencePage() {
           Most hiring systems look organized on the surface but produce inconsistent outcomes underneath. This page explains why common scorecards fail,
           what that costs recruiters and hiring teams, and how structured scoring improves decision quality at scale.
         </p>
+
+        <section className="bg-paper py-8">
+          <div className="mx-auto max-w-4xl px-6">
+            <ImagePlaceholder label="Data science visualization — confidence-weighted scoring" search="data science visualization algorithm" />
+          </div>
+        </section>
 
         <section className="space-y-3">
           <h2 className="text-2xl font-semibold text-navy">1) The problem with 1–5 rating scales</h2>

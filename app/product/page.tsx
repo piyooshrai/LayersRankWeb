@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/json-ld';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 
 export const metadata = makeMetadata({
@@ -290,6 +291,12 @@ export default function ProductPage() {
               See Sample Report
             </Link>
           </div>
+          <div className="mt-12 max-w-3xl">
+            <ImagePlaceholder
+              label="Indian hiring team reviewing candidate on screen"
+              search="indian professional interview office"
+            />
+          </div>
         </div>
       </section>
 
@@ -359,6 +366,12 @@ export default function ProductPage() {
             follow-up question during the interview to resolve the uncertainty. By the time you see
             the report, every score is backed by consistent evidence.
           </p>
+          <div className="mt-8">
+            <ImagePlaceholder
+              label="Platform screenshot or flow diagram"
+              search="hiring platform dashboard screenshot"
+            />
+          </div>
         </div>
       </section>
 

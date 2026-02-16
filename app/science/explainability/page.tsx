@@ -1,5 +1,6 @@
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Explainable AI in Hiring | LayersRank',
@@ -16,6 +17,12 @@ export default function ExplainabilityPage() {
         title="No Black Boxes"
         description="Every LayersRank score can be explained, traced, and audited."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Transparent AI decision audit trail" search="explainable ai transparency audit" />
+        </div>
+      </section>
 
       {/* What Explainability Means */}
       <section className="bg-paper py-20">

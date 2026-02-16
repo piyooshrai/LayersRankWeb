@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { PageHero, PageCTA } from '@/components/page-sections';
 import { makeMetadata } from '@/lib/seo';
 
@@ -20,6 +21,12 @@ export default function CampusHiringPage() {
         primaryCta="Scale Your Campus Hiring"
         primaryCtaHref="/demo"
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Indian college students at campus drive" search="indian college students interview" />
+        </div>
+      </section>
 
       {/* Campus Challenges — light bg */}
       <section className="bg-paper py-20">

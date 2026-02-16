@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA, ComparisonTable } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'LayersRank vs HackerRank | Beyond Coding Tests',
@@ -27,6 +28,12 @@ export default function CompareHackerRankPage() {
         title="LayersRank vs HackerRank"
         description="HackerRank tests if someone can code. LayersRank evaluates if they can think, communicate, and solve real problems."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Beyond coding tests — full candidate evaluation" search="software developer assessment evaluation" />
+        </div>
+      </section>
 
       {/* Comparison Table */}
       <section className="bg-paper py-20">

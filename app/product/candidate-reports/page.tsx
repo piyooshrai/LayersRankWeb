@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA, FeatureCard, FeatureGrid } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Reports That Drive Decisions | LayersRank',
@@ -80,6 +81,12 @@ export default function CandidateReportsPage() {
         title="Reports That Drive Decisions"
         description="Not a wall of data. A clear recommendation with the evidence to back it up."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Full candidate report screenshot" search="candidate evaluation report dashboard" />
+        </div>
+      </section>
 
       {/* Report Sections Walkthrough */}
       <section className="bg-paper py-20">

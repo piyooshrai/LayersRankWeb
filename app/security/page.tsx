@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { PageHero, PageCTA } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { makeMetadata } from '@/lib/seo';
 
 export const metadata = makeMetadata({
@@ -18,6 +19,12 @@ export default function SecurityPage() {
         title="Enterprise-Grade Security"
         description="Your data is protected by industry-leading security practices and compliance certifications."
       />
+
+      <section className="bg-paper-off px-6 py-12">
+        <div className="mx-auto max-w-7xl">
+          <ImagePlaceholder label="Enterprise security infrastructure" search="data security infrastructure server" />
+        </div>
+      </section>
 
       {/* Certifications — light bg */}
       <section className="bg-paper py-20">

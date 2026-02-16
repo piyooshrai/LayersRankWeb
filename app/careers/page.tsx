@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { PageHero, PageCTA } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { makeMetadata } from '@/lib/seo';
 
 export const metadata = makeMetadata({
@@ -49,6 +50,12 @@ export default function CareersPage() {
         title="Build the Future of Hiring"
         description="We're looking for people who believe hiring should be fair, data-driven, and transparent."
       />
+
+      <section className="bg-paper-off px-6 py-12">
+        <div className="mx-auto max-w-7xl">
+          <ImagePlaceholder label="Life at LayersRank — collaborative engineering team" search="tech team collaborative office india" />
+        </div>
+      </section>
 
       {/* Why LayersRank — light bg */}
       <section className="bg-paper py-20">

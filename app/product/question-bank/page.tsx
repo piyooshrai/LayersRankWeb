@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA, FeatureCard, FeatureGrid } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Interview Question Bank | LayersRank',
@@ -117,6 +118,12 @@ export default function QuestionBankPage() {
         title="Questions Designed for Signal"
         description="Every question is mapped to a competency, calibrated to a level, and validated for reliability. No filler. No gotchas. Just structured signal."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Question library browse interface" search="question library assessment platform" />
+        </div>
+      </section>
 
       {/* Browse by Role */}
       <section className="bg-paper py-20">

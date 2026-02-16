@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { PageHero, PageCTA } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 import { makeMetadata } from '@/lib/seo';
 
 export const metadata = makeMetadata({
@@ -18,6 +19,12 @@ export default function AboutPage() {
         title="Making Hiring Decisions Confident and Fair"
         description="Founded to solve GCC hiring inconsistency. Built by AI infrastructure architects, IO researchers, and hiring operations specialists."
       />
+
+      <section className="bg-paper-off px-6 py-12">
+        <div className="mx-auto max-w-7xl">
+          <ImagePlaceholder label="LayersRank founding team" search="indian tech founder professional" />
+        </div>
+      </section>
 
       {/* Our Story — light bg */}
       <section className="bg-paper py-20">

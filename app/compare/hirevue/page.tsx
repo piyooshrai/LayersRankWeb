@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'LayersRank vs HireVue | Comparison',
@@ -65,6 +66,12 @@ export default function CompareHireVuePage() {
             HireVue records video interviews and runs AI assessments. LayersRank evaluates with
             confidence bands, adaptive follow-up, and audit-ready reports that leadership can trust.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Side-by-side platform comparison" search="software comparison evaluation" />
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA, FeatureCard, FeatureGrid } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Integrations | LayersRank',
@@ -74,6 +75,12 @@ export default function IntegrationsPage() {
         title="Plugs Into Your Stack"
         description="Push candidates from your ATS. Pull reports back. No workflow disruption."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="ATS integration flow diagram" search="software integration workflow diagram" />
+        </div>
+      </section>
 
       {/* ATS Integrations */}
       <section className="bg-paper py-20">

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
+import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Structured vs Unstructured Interviews | LayersRank',
@@ -24,6 +25,12 @@ export default function CompareTraditionalInterviewsPage() {
         title="Why Phone Screens Fail"
         description="Unstructured interviews feel natural but produce inconsistent results. Research shows they are one of the weakest predictors of job performance."
       />
+
+      <section className="bg-paper py-8">
+        <div className="mx-auto max-w-4xl px-6">
+          <ImagePlaceholder label="Structured vs unstructured interview comparison" search="structured interview professional evaluation" />
+        </div>
+      </section>
 
       {/* The Evidence */}
       <section className="bg-paper py-20">
