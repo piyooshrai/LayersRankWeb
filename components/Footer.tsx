@@ -68,7 +68,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/LayersRank By The Algorithm Logo Transparent.jpg"
+                src="/images/LayersRank By The Algorithm Logo Transparent.png"
                 alt="LayersRank"
                 width={120}
                 height={32}

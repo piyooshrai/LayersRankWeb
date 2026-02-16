@@ -31,7 +31,7 @@ export function Navigation() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/images/LayersRank By The Algorithm Logo Transparent.jpg"
+            src="/images/LayersRank By The Algorithm Logo Transparent.png"
             alt="LayersRank"
             width={140}
             height={36}
