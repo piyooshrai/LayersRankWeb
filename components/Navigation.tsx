@@ -31,10 +31,11 @@ export function Navigation() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/images/logo-placeholder.svg"
+            src="/images/LayersRank By The Algorithm Logo Transparent.jpg"
             alt="LayersRank"
             width={140}
             height={36}
+            className="object-contain"
             priority
           />
         </Link>

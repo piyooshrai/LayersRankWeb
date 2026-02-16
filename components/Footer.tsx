@@ -68,11 +68,11 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/logo-placeholder.svg"
+                src="/images/LayersRank By The Algorithm Logo Transparent.jpg"
                 alt="LayersRank"
                 width={120}
                 height={32}
-                className="brightness-0 invert"
+                className="brightness-0 invert object-contain"
               />
             </Link>
             <p className="mt-4 text-sm text-gray-400">
