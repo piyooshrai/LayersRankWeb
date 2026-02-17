@@ -61,17 +61,17 @@ const footerColumns = [
 export function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-ink text-white">
-      <div className="mx-auto max-w-7xl px-6 py-16">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
         {/* Main Footer Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-6">
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
           {/* Brand Column */}
-          <div className="lg:col-span-1">
+          <div className="sm:col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="inline-block">
               <Image
                 src="/images/LayersRank By The Algorithm Logo Transparent.png"
                 alt="LayersRank"
-                width={120}
-                height={32}
+                width={140}
+                height={36}
                 className="brightness-0 invert object-contain"
               />
             </Link>
@@ -117,7 +117,7 @@ export function Footer() {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="mt-12 rounded-xl border border-gray-700 bg-gray-800/50 p-6 md:flex md:items-center md:justify-between">
+        <div className="mt-12 rounded-xl border border-gray-700 bg-gray-800/50 p-4 md:flex md:items-center md:justify-between md:p-6">
           <div>
             <h3 className="text-sm font-semibold text-white">Stay updated on hiring science</h3>
             <p className="mt-1 text-sm text-gray-400">
@@ -128,7 +128,7 @@ export function Footer() {
             <input
               type="email"
               placeholder="your@email.com"
-              className="rounded-md border border-gray-600 bg-gray-700 px-4 py-2 text-sm text-white placeholder-gray-400 focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
+              className="w-full rounded-md border border-gray-600 bg-gray-700 px-4 py-2 text-sm text-white placeholder-gray-400 focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow md:w-auto"
             />
             <button className="whitespace-nowrap rounded-md bg-brand-yellow px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-brand-orange">
               Subscribe
@@ -138,10 +138,21 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gray-700 pt-8 md:flex-row">
-          <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} LayersRank. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
+            <p className="text-sm text-gray-500">
+              &copy; {new Date().getFullYear()} LayersRank. All rights reserved.
+            </p>
+            <span className="hidden text-gray-600 md:inline">&middot;</span>
+            <a
+              href="https://www.the-algo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-500 transition-colors hover:text-brand-yellow"
+            >
+              Powered By The Algorithm
+            </a>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             <span className="flex items-center gap-1.5 text-xs text-gray-500">
               <svg className="h-4 w-4 text-brand-green" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />

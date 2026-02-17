@@ -10,10 +10,10 @@ export function CTASection() {
         <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-light">
           See how LayersRank evaluates candidates differently. 20-minute demo, no commitment.
         </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
           <Link
             href="/demo"
-            className="inline-flex items-center gap-2 rounded-lg bg-ink px-8 py-4 text-base font-semibold text-white shadow-lg transition-colors hover:bg-ink-light"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-ink px-6 py-3 text-base font-semibold text-white shadow-lg transition-colors hover:bg-ink-light sm:w-auto md:px-8 md:py-4"
           >
             Book a Demo
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -22,7 +22,7 @@ export function CTASection() {
           </Link>
           <Link
             href="/resources"
-            className="inline-flex items-center gap-2 rounded-lg border-2 border-ink/20 px-8 py-4 text-base font-medium text-ink transition-colors hover:border-ink/40"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-lg border-2 border-ink/20 px-6 py-3 text-base font-medium text-ink transition-colors hover:border-ink/40 sm:w-auto md:px-8 md:py-4"
           >
             Download Sample Report
           </Link>
