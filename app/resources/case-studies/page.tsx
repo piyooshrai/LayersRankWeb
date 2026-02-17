@@ -3,48 +3,69 @@ import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
 
 export const metadata = makeMetadata({
-  title: 'Case Studies | LayersRank',
+  title: 'Case Studies | Customer Success Stories | LayersRank',
   description:
-    'See how hiring teams use LayersRank to improve quality and speed. Real results from Fortune 500 GCCs, fast-growing startups, and global enterprises.',
+    'See how GCCs, startups, and enterprises use LayersRank to reduce panel variance, speed up hiring, and find better candidates.',
   path: '/resources/case-studies',
 });
 
 const caseStudies = [
   {
-    tag: 'GCC',
-    tagColor: 'bg-brand-yellow/10 text-brand-yellow',
-    title: 'How a Fortune 500 GCC Reduced Time-to-Shortlist by 40%',
-    summary:
-      'A Fortune 500 Global Capability Center hiring 500+ engineers per quarter across Bangalore, Hyderabad, and Pune struggled with cross-city consistency. Different interviewers, different standards, different outcomes. LayersRank standardized their evaluation process without slowing throughput.',
+    tag: 'Enterprise / GCC',
+    color: '#3b82f6',
+    tagClasses: 'bg-[#3b82f6]/10 text-[#3b82f6]',
+    headline: '76% Less Panel Disagreement',
+    companyType: 'Fortune 500 Global Capability Center, Bangalore',
+    challenge:
+      'Inconsistent evaluation across interview panels. Different panels reached different conclusions about the same candidates. HQ questioned every recommendation, creating 11-day approval cycles.',
+    solution:
+      'Implemented LayersRank for first-round technical and behavioral assessment. Standardized evaluation criteria across all panels. Confidence scoring identified when additional probing was needed.',
     stats: [
-      { value: '40%', label: 'Faster shortlisting' },
-      { value: '500+', label: 'Hires per quarter' },
-      { value: '3', label: 'Cities standardized' },
+      { value: '76%', label: 'Less panel disagreement', detail: '23% \u2192 5.5%' },
+      { value: '77%', label: 'Faster HQ approval', detail: '11d \u2192 2.5d' },
+      { value: '46%', label: 'Lower offer dropout', detail: '22% \u2192 12%' },
     ],
+    quote:
+      'For the first time, we can show HQ exactly why we recommend a candidate. The data speaks for itself.',
+    quoteAuthor: 'Head of Talent Acquisition',
   },
   {
     tag: 'Startup',
-    tagColor: 'bg-brand-green/10 text-brand-green',
-    title: 'How a Series B Startup Scaled from 20 to 100 Engineers',
-    summary:
-      'A Series B startup needed to 5x their engineering team in 12 months without sacrificing quality. Their founding engineers were spending 30% of their time on interviews. LayersRank gave them structure without slowing down their velocity.',
+    color: '#2ecc71',
+    tagClasses: 'bg-[#2ecc71]/10 text-[#2ecc71]',
+    headline: 'First Offer in 5 Days',
+    companyType: 'Series B Fintech Startup',
+    challenge:
+      'Losing top candidates to competitors who moved faster. Engineering leaders spending 15+ hours per week on phone screens. 3-week average time from application to offer.',
+    solution:
+      'Replaced phone screens with LayersRank async assessment. Founders review 10-minute reports instead of conducting 45-minute calls. AI evaluation runs overnight, reports ready by morning.',
     stats: [
-      { value: '5x', label: 'Team growth' },
-      { value: '70%', label: 'Less engineer time on screens' },
-      { value: '12 mo', label: 'Scaling timeline' },
+      { value: '5 days', label: 'Time to first offer', detail: 'was 21' },
+      { value: '80%', label: 'Less founder screen time', detail: '15h \u2192 3h/wk' },
+      { value: '82%', label: 'Offer acceptance', detail: 'was 65%' },
     ],
+    quote:
+      'We went from losing candidates to being the first offer on their table. That changes everything.',
+    quoteAuthor: 'Co-founder & CTO',
   },
   {
-    tag: 'Enterprise',
-    tagColor: 'bg-brand-orange/10 text-brand-orange',
-    title: 'How an Enterprise Standardized Global Hiring',
-    summary:
-      'A multinational enterprise with multiple business units across 8 countries needed consistent candidate evaluation. Each BU had its own process, making internal mobility and cross-team comparison impossible. LayersRank unified their hiring framework.',
+    tag: 'Enterprise / IT Services',
+    color: '#f39c12',
+    tagClasses: 'bg-[#f39c12]/10 text-[#f39c12]',
+    headline: '50,000 Candidates, Zero Pedigree Filtering',
+    companyType: 'Large IT Services Company',
+    challenge:
+      'Filtering 50,000+ campus applicants annually using college tier as primary criterion. Missing strong talent from Tier-2 and Tier-3 colleges. Diversity goals unmet despite stated commitments.',
+    solution:
+      'Deployed LayersRank for campus assessment. All candidates evaluated on demonstrated capability, not college brand. Identity-blind scoring ensured fair comparison across backgrounds.',
     stats: [
-      { value: '8', label: 'Countries unified' },
-      { value: '60%', label: 'Faster cross-BU comparison' },
-      { value: '1', label: 'Unified framework' },
+      { value: '50K+', label: 'Candidates assessed', detail: 'all of them' },
+      { value: '34%', label: 'Tier-2/3 hires', detail: 'was 11%' },
+      { value: '\u2191', label: 'First-year performance', detail: 'improved' },
     ],
+    quote:
+      'We found talent we would have filtered out before we ever looked at them. That\u2019s the real win.',
+    quoteAuthor: 'VP, Campus Relations',
   },
 ];
 
@@ -52,60 +73,80 @@ export default function CaseStudiesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Resources"
-        title="Customer Success Stories"
-        description="See how hiring teams use LayersRank to improve quality and speed."
+        eyebrow="Resources / Case Studies"
+        title="Real Results from Real Teams"
+        description="How engineering teams use LayersRank to hire faster, more consistently, and with confidence they can defend to leadership."
       />
 
-      {/* Case Study Cards */}
-      <section className="bg-paper py-20">
+      {/* ── CASE STUDY CARDS ── */}
+      <section className="bg-white py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="space-y-10">
             {caseStudies.map((study) => (
               <div
-                key={study.title}
-                className="flex flex-col rounded-2xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+                key={study.headline}
+                className="overflow-hidden rounded-2xl border border-gray-200 shadow-sm"
               >
-                {/* Card Header */}
-                <div className="p-6 pb-0">
-                  <span
-                    className={`inline-block rounded-full px-3 py-1 text-xs font-semibold ${study.tagColor}`}
-                  >
-                    {study.tag}
-                  </span>
-                  <h3 className="mt-4 text-lg font-bold leading-snug text-ink">
-                    {study.title}
-                  </h3>
-                </div>
+                {/* Color bar */}
+                <div className="h-1.5" style={{ backgroundColor: study.color }} />
 
-                {/* Card Body */}
-                <div className="flex-1 p-6">
-                  <p className="text-sm text-ink-light">{study.summary}</p>
-                </div>
+                <div className="p-6 sm:p-8 md:p-10">
+                  {/* Tag + company */}
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className={`inline-block rounded-full px-3 py-1 text-xs font-semibold ${study.tagClasses}`}>
+                      {study.tag}
+                    </span>
+                    <span className="text-sm text-ink-muted">{study.companyType}</span>
+                  </div>
 
-                {/* Stats Row */}
-                <div className="border-t border-gray-100 px-6 py-4">
-                  <div className="grid grid-cols-3 gap-4 text-center">
+                  {/* Headline */}
+                  <h2 className="mt-4 text-2xl font-bold text-ink sm:text-3xl">{study.headline}</h2>
+
+                  {/* Challenge + Solution */}
+                  <div className="mt-6 grid gap-6 md:grid-cols-2">
+                    <div>
+                      <h3 className="text-sm font-bold uppercase tracking-wide text-ink-muted">Challenge</h3>
+                      <p className="mt-2 text-sm leading-relaxed text-ink-light">{study.challenge}</p>
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-bold uppercase tracking-wide text-ink-muted">Solution</h3>
+                      <p className="mt-2 text-sm leading-relaxed text-ink-light">{study.solution}</p>
+                    </div>
+                  </div>
+
+                  {/* Stats */}
+                  <div className="mt-8 grid grid-cols-3 gap-4 rounded-xl bg-paper-off p-5 sm:p-6">
                     {study.stats.map((stat) => (
-                      <div key={stat.label}>
-                        <p className="text-xl font-extrabold text-brand-yellow">{stat.value}</p>
-                        <p className="mt-0.5 text-xs text-ink-muted">{stat.label}</p>
+                      <div key={stat.label} className="text-center">
+                        <p className="text-2xl font-extrabold text-brand-yellow sm:text-3xl">{stat.value}</p>
+                        <p className="mt-1 text-xs font-medium text-ink sm:text-sm">{stat.label}</p>
+                        <p className="mt-0.5 text-xs text-ink-muted">({stat.detail})</p>
                       </div>
                     ))}
                   </div>
-                </div>
 
-                {/* Card Footer */}
-                <div className="border-t border-gray-100 p-6 pt-4">
-                  <Link
-                    href="/demo"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-brand-yellow hover:text-brand-orange"
-                  >
-                    Read Case Study
-                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
+                  {/* Quote */}
+                  <blockquote className="mt-8 border-l-4 border-brand-yellow pl-5">
+                    <p className="text-sm italic leading-relaxed text-ink-light sm:text-base">
+                      &ldquo;{study.quote}&rdquo;
+                    </p>
+                    <cite className="mt-2 block text-sm font-semibold not-italic text-ink">
+                      &mdash; {study.quoteAuthor}
+                    </cite>
+                  </blockquote>
+
+                  {/* CTA */}
+                  <div className="mt-6">
+                    <Link
+                      href="/demo"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-brand-yellow hover:text-brand-orange"
+                    >
+                      Read Full Case Study
+                      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
@@ -113,12 +154,38 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
+      {/* ── BOTTOM CTA ── */}
       <PageCTA
-        title="Get results like these"
-        description="See how LayersRank can transform your hiring process. 20-minute demo, no commitment."
+        title="Want to Be Our Next Case Study?"
+        description="Start with a pilot. See results in 30 days. We\u2019ll help you document the wins."
         cta="Book a Demo"
         ctaHref="/demo"
+        secondaryCta="Calculate Your ROI"
+        secondaryCtaHref="/resources/roi-calculator"
       />
+
+      {/* ── INTERNAL LINKS ── */}
+      <section className="bg-white py-16 md:py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+            {[
+              { href: '/solutions/gcc', label: 'GCC Solutions', desc: 'For global capability centers' },
+              { href: '/solutions/startups', label: 'Startup Solutions', desc: 'For high-growth teams' },
+              { href: '/resources/sample-report', label: 'Sample Report', desc: 'See a real evaluation' },
+              { href: '/pricing', label: 'Pricing', desc: 'Transparent plans' },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="rounded-lg border border-gray-200 p-5 transition-shadow hover:shadow-md"
+              >
+                <p className="font-semibold text-ink">{link.label}</p>
+                <p className="mt-1 text-sm text-ink-muted">{link.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
