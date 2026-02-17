@@ -2,9 +2,10 @@ import { ReactNode } from 'react';
 import { makeMetadata } from '@/lib/seo';
 
 export const metadata = makeMetadata({
-  title: 'ROI Calculator | LayersRank',
+  title:
+    'Hiring ROI Calculator | Calculate LayersRank Savings | LayersRank',
   description:
-    'Estimate time and cost savings with LayersRank. Calculate your hiring ROI based on your current volume, time-to-fill, and interview costs.',
+    'Calculate your potential savings with LayersRank. Estimate time saved, cost reduction, and quality improvement for your hiring process.',
   path: '/resources/roi-calculator',
 });
 
