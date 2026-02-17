@@ -72,14 +72,8 @@ export function WhitepaperGateModal({
       setSubmitting(false);
       setSubmitted(true);
 
-      // Trigger download
-      const link = document.createElement('a');
-      link.href = downloadUrl;
-      link.download = '';
-      link.target = '_blank';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      // Open whitepaper in new tab for reading / print-to-PDF
+      window.open(downloadUrl, '_blank');
 
       // Reset after delay
       setTimeout(() => {

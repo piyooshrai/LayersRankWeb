@@ -125,7 +125,7 @@ export function WhitepaperCards({ papers }: { papers: WhitepaperDef[] }) {
           title={modalPaper.title}
           subtitle={modalPaper.subtitle}
           pageCount={modalPaper.pages}
-          downloadUrl={`/whitepapers/${modalPaper.slug}.pdf`}
+          downloadUrl={`/resources/whitepapers/${modalPaper.slug}`}
         />
       )}
     </>
