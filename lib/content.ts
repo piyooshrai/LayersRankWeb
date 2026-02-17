@@ -89,8 +89,8 @@ export function getPost(slug: string) {
 export const whitepapers = [
   {
     slug: 'tr-q-rofns-hiring-whitepaper',
-    title: 'Candidate Ranking Confidence Model (Technical Appendix)',
-    description: 'Mathematical foundations and implementation notes for confidence-weighted hiring pipelines.',
+    title: 'The Science Behind Confidence Scoring',
+    description: 'How TR-q-ROFNs transform candidate evaluation. Mathematical foundations, practical applications, and validation data for confidence-aware hiring decisions.',
     component: WhitepaperTrq
   },
   {
