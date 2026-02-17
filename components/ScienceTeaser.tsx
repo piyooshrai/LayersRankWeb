@@ -4,9 +4,9 @@ export function ScienceTeaser() {
   return (
     <section className="bg-paper-off py-20">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
           {/* Visual: Confidence Band Diagram */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-8">
+          <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-8">
             <p className="mb-6 text-sm font-semibold text-ink-muted">How Uncertainty Detection Works</p>
 
             {/* Score + Confidence Band Visualization */}

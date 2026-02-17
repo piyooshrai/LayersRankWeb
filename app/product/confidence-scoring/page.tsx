@@ -65,10 +65,41 @@ const faqs = [
   },
 ];
 
+const seoFaqs = [
+  {
+    q: 'What is uncertainty quantification in hiring assessment?',
+    a: 'Traditional assessments produce a single score (e.g., "74") that looks precise but hides how confident the evaluation is. Uncertainty quantification explicitly measures and reports this confidence. LayersRank uses fuzzy mathematics to produce scores with intervals: "74 ± 4, 87% confidence" tells you both the score AND how much to trust it.',
+  },
+  {
+    q: 'What is "Refusal Degree" and why does it matter?',
+    a: 'Refusal Degree (R) is the mathematical measure of evaluation uncertainty in our TR-q-ROFN framework. High R means the evidence doesn\'t clearly point to a positive or negative assessment — there\'s genuine ambiguity. For COOs and risk-focused leaders, a "we\'re not sure" signal is more valuable than a forced guess that could be wrong. R lets you know when to probe further rather than trusting a shaky score.',
+  },
+  {
+    q: 'How does fuzzy logic reduce "lucky guess" risk in screening?',
+    a: 'Multiple models evaluate every response independently. A candidate who gives one lucky strong answer will show high variance across models — semantic similarity might be high, but reasoning depth might be low. This disagreement surfaces as high Refusal Degree, triggering adaptive follow-up questions. Lucky guessers can\'t maintain consistency across probing.',
+  },
+  {
+    q: 'What\'s the difference between intuitionistic fuzzy sets and q-rung orthopair fuzzy sets?',
+    a: 'Intuitionistic fuzzy sets (Atanassov, 1986) require Truth + Falsity ≤ 1. q-Rung orthopair fuzzy sets (Yager, 2017) relax this to T^q + F^q ≤ 1, allowing greater flexibility in modeling uncertainty. With q=2 (Pythagorean fuzzy sets, which LayersRank uses), you get T² + F² ≤ 1 — allowing more nuanced representation of partial and conflicting evidence. The practical benefit: better handling of genuinely ambiguous evaluations.',
+  },
+  {
+    q: 'How do confidence intervals help hiring managers make decisions?',
+    a: 'A score of 74 with tight confidence (±2) means "definitely around 74." A score of 74 with wide confidence (±10) means "somewhere between 64 and 84." These require different decisions: the first is reliable enough to act on; the second suggests gathering more information. Without confidence intervals, both look the same — and you might make a wrong call on the uncertain one.',
+  },
+  {
+    q: 'Can confidence scoring detect candidate fraud or cheating?',
+    a: 'Partially. Our behavioral signals (typing patterns, paste events, tab switches) flag suspicious activity. More importantly, adaptive follow-up questions probe uncertain responses — cheaters who copied answers struggle to answer clarifying questions about content they didn\'t genuinely produce. The combination of behavioral monitoring and adaptive probing catches most integrity issues.',
+  },
+  {
+    q: 'How does LayersRank handle the "black box AI" problem?',
+    a: 'Complete transparency. Every score traces to specific evidence: which questions contributed, how each model evaluated responses, where models agreed or disagreed. When someone asks "why did this candidate score 74?", you can drill down to exact inputs and logic. This isn\'t just good practice — it\'s essential for compliance and continuous improvement.',
+  },
+];
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({
+  mainEntity: [...faqs, ...seoFaqs].map((f) => ({
     '@type': 'Question',
     name: f.q,
     acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -729,6 +760,31 @@ export default function ConfidenceScoringPage() {
           <h2 className="text-2xl font-bold text-ink">Frequently asked questions</h2>
           <div className="mt-12 divide-y divide-gray-200">
             {faqs.map((faq) => (
+              <details key={faq.q} className="group py-6">
+                <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold text-ink">
+                  {faq.q}
+                  <svg
+                    className="h-5 w-5 shrink-0 text-ink-muted transition-transform group-open:rotate-45"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                </summary>
+                <p className="mt-3 text-[15px] leading-relaxed text-ink-light">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── SEO FAQ ── */}
+      <section className="bg-paper-off py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-2xl font-bold text-ink">More about confidence scoring</h2>
+          <div className="mt-12 divide-y divide-gray-200">
+            {seoFaqs.map((faq) => (
               <details key={faq.q} className="group py-6">
                 <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold text-ink">
                   {faq.q}

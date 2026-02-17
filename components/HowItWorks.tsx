@@ -49,10 +49,10 @@ export function HowItWorks() {
 
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           {steps.map((step) => (
-            <div key={step.number} className="relative rounded-2xl border border-gray-200 bg-white p-8">
+            <div key={step.number} className="relative rounded-2xl border border-gray-200 bg-white p-6 md:p-8">
               {/* Step Number */}
               <div className="mb-6 flex items-center gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-brand-yellow/10 text-brand-yellow">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-yellow/10 text-brand-yellow md:h-14 md:w-14">
                   {step.icon}
                 </div>
                 <span className="font-mono text-3xl font-bold text-gray-200">{step.number}</span>

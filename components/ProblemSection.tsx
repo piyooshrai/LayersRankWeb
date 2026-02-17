@@ -40,14 +40,14 @@ export function ProblemSection() {
               key={stat.value}
               className="rounded-xl border border-gray-200 bg-paper-off p-8 text-center"
             >
-              <p className={`text-5xl font-extrabold ${stat.color}`}>{stat.value}</p>
+              <p className={`text-3xl font-extrabold sm:text-4xl md:text-5xl ${stat.color}`}>{stat.value}</p>
               <p className="mt-3 text-sm text-ink-muted">{stat.label}</p>
             </div>
           ))}
         </div>
 
         {/* Supporting Content with Image */}
-        <div className="mt-16 grid items-center gap-12 lg:grid-cols-2">
+        <div className="mt-16 grid items-center gap-8 md:grid-cols-2 md:gap-12">
           <div className="space-y-4">
             <p className="text-lg text-ink-light">
               Panel disagreement slows decisions, creates extra interview loops, and burns

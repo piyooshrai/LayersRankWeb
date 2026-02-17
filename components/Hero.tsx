@@ -11,7 +11,7 @@ export function Hero() {
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-brand-yellow">
             Structured Hiring for Recruiters and Engineering Leaders
           </p>
-          <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-5xl lg:text-6xl">
+          <h1 className="text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
             Stop Guessing.{' '}
             <span className="text-brand-yellow">Start Ranking.</span>
           </h1>
