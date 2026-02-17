@@ -13,7 +13,7 @@ export default function ResourcesPage() {
       <h1 className="text-4xl font-semibold text-navy">Resources Hub</h1>
       <p className="text-slate-700">Practical guidance on structured interview scoring, hiring consistency, GCC standards, and interview operations.</p>
       <div className="grid gap-6 md:grid-cols-2">
-        <Link href="/resources/blog" className="rounded-xl border border-slate-200 bg-white p-6">
+        <Link href="/blog" className="rounded-xl border border-slate-200 bg-white p-6">
           <h2 className="text-2xl font-semibold text-navy">Blog</h2>
           <p className="mt-2 text-slate-700">Topic clusters and operational playbooks.</p>
         </Link>

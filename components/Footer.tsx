@@ -36,7 +36,7 @@ const footerColumns = [
   {
     title: 'Resources',
     links: [
-      { label: 'Blog', href: '/resources/blog' },
+      { label: 'Blog', href: '/blog' },
       { label: 'Whitepapers', href: '/resources/whitepapers' },
       { label: 'Case Studies', href: '/resources/case-studies' },
       { label: 'Sample Report', href: '/resources/sample-report' },

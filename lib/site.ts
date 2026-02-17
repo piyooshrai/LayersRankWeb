@@ -80,12 +80,11 @@ export const navDropdowns: NavDropdown[] = [
   {
     label: 'Resources',
     items: [
-      { href: '/resources/blog', label: 'Blog', description: 'Insights on hiring operations' },
+      { href: '/blog', label: 'Blog', description: 'Insights on hiring operations' },
       { href: '/resources/whitepapers', label: 'Whitepapers', description: 'Technical deep-dives' },
       { href: '/resources/case-studies', label: 'Case Studies', description: 'Customer success stories' },
       { href: '/resources/roi-calculator', label: 'ROI Calculator', description: 'Estimate your savings' },
       { href: '/resources/sample-report', label: 'Sample Report', description: 'See a real candidate report', featured: true },
-      { href: '/product/question-bank', label: 'Question Library', description: 'Browse our question bank' },
     ],
   },
 ];
