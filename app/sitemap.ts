@@ -27,7 +27,7 @@ const staticRoutes = [
   '/compare/hirevue',
   '/compare/hackerrank',
   '/compare/codility',
-  '/compare/traditional-interviews',
+  '/compare/traditional',
   '/resources',
   '/resources/blog',
   '/resources/whitepapers',

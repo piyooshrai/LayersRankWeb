@@ -30,7 +30,7 @@ const footerColumns = [
       { label: 'vs HireVue', href: '/compare/hirevue' },
       { label: 'vs HackerRank', href: '/compare/hackerrank' },
       { label: 'vs Codility', href: '/compare/codility' },
-      { label: 'vs Traditional', href: '/compare/traditional-interviews' },
+      { label: 'vs Traditional', href: '/compare/traditional' },
     ],
   },
   {

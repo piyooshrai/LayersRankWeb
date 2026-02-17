@@ -74,7 +74,7 @@ export const navDropdowns: NavDropdown[] = [
       { href: '/compare/hirevue', label: 'vs HireVue', description: 'Video interview comparison' },
       { href: '/compare/hackerrank', label: 'vs HackerRank', description: 'Coding assessment comparison' },
       { href: '/compare/codility', label: 'vs Codility', description: 'Technical screening comparison' },
-      { href: '/compare/traditional-interviews', label: 'vs Traditional', description: 'Replace manual screening' },
+      { href: '/compare/traditional', label: 'vs Traditional', description: 'Replace manual screening' },
     ],
   },
   {
