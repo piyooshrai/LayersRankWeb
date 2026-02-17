@@ -46,10 +46,41 @@ const faqs = [
   },
 ];
 
+const seoFaqs = [
+  {
+    q: 'How do I prove to US headquarters that our India engineering hires meet the same bar as Palo Alto?',
+    a: 'LayersRank solves the "global bar alignment" problem with standardized evaluation: every candidate answers the same questions, evaluated against the same criteria, with confidence-weighted scores. When HQ asks "how do you know this candidate is strong?", you show them the assessment report \u2014 same format, same metrics, same rigor as any other location. No more "trust us, they interviewed well."',
+  },
+  {
+    q: "What\u2019s the best way to create audit-ready engineering hiring reports for US HQs?",
+    a: 'LayersRank generates comprehensive reports for every candidate with scores, confidence intervals, question-by-question breakdowns, and clear recommendations. These reports satisfy audit requirements because every decision traces to documented evidence. When compliance asks how you evaluated 500 candidates, you have 500 detailed reports \u2014 not interview notes that vary by panel.',
+  },
+  {
+    q: 'How do we reduce interviewer bias in India-based technical panels?',
+    a: "Three ways: (1) Standardized questions \u2014 every candidate gets the same assessment, (2) AI evaluation \u2014 models don\u2019t have bad days, similarity bias, or fatigue, (3) Confidence scoring \u2014 when evaluation is uncertain, the system flags it rather than forcing a guess. LayersRank doesn\u2019t eliminate human judgment; it moves human judgment to final rounds where it matters most.",
+  },
+  {
+    q: 'How do we scale engineering hiring in Bangalore without increasing mis-hire costs?',
+    a: 'Traditional scaling means more interviewers, which means more variance, which means more mis-hires. LayersRank breaks this: assessment capacity scales infinitely (send 1,000 links as easily as 10), evaluation consistency stays constant (same AI models), and you only use senior interviewer time for final rounds on pre-qualified candidates. The result: scale hiring volume without scaling mis-hire rate.',
+  },
+  {
+    q: 'How do we identify strong candidates from Tier-2 and Tier-3 colleges without lowering our technical bar?',
+    a: "Stop filtering by college name. LayersRank evaluates responses, not resumes \u2014 our models don\u2019t see where candidates went to school. A clear system design answer scores well whether it comes from IIT Delhi or a regional engineering college. This isn\u2019t lowering the bar; it\u2019s measuring the right thing. Companies using LayersRank report 30-40% of strong hires coming from colleges they\u2019d never previously considered.",
+  },
+  {
+    q: "What\u2019s the difference between LayersRank and HireVue for GCC hiring?",
+    a: "HireVue costs $35,000-50,000/year and is built for US Fortune 500 companies. LayersRank is priced for Indian economics (\u20B91,500-2,500/interview), offers India data residency, and includes confidence scoring that HireVue doesn\u2019t provide. For GCCs specifically, LayersRank\u2019s audit-ready reports and consistency metrics address the \u201Cprove it to HQ\u201D problem that generic video interview tools ignore.",
+  },
+  {
+    q: 'How do we maintain interview consistency across multiple Indian cities (Bangalore, Hyderabad, Pune, NCR)?',
+    a: "Centralized governance with decentralized execution. LayersRank provides one platform, one question bank, one evaluation standard \u2014 applied consistently regardless of which city the candidate is in. Your Hyderabad panel and Bangalore panel aren\u2019t applying different bars; they\u2019re reviewing the same AI-evaluated assessments with the same scoring criteria.",
+  },
+];
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({
+  mainEntity: [...faqs, ...seoFaqs].map((f) => ({
     '@type': 'Question',
     name: f.q,
     acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -603,8 +634,45 @@ export default function GccPage() {
         </div>
       </section>
 
-      {/* ── NEXT STEPS ── */}
+      {/* ── SEO FAQ ── */}
       <section className="bg-paper py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-brand-yellow">
+            Frequently Asked Questions
+          </p>
+          <h2 className="mt-4 text-2xl font-bold text-ink">
+            Common questions about GCC hiring at scale
+          </h2>
+          <div className="mt-10 divide-y divide-gray-200 rounded-xl border border-gray-200 bg-white">
+            {seoFaqs.map((faq) => (
+              <details key={faq.q} className="group px-6 py-6">
+                <summary className="flex cursor-pointer items-center justify-between text-[15px] font-semibold text-ink">
+                  {faq.q}
+                  <svg
+                    className="h-5 w-5 shrink-0 text-ink-muted transition-transform group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+                <p className="mt-3 text-sm leading-relaxed text-ink-light">
+                  {faq.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── NEXT STEPS ── */}
+      <section className="bg-paper-off py-20">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-2xl font-bold text-ink">Next steps</h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
