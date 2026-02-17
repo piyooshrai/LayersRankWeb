@@ -726,8 +726,62 @@ export default function BiasMitigationPage() {
         </div>
       </section>
 
+      {/* SEO FAQ */}
+      <section className="bg-paper-off py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-brand-yellow">
+            Common Questions
+          </p>
+          <h2 className="mt-4 text-2xl font-bold text-ink">
+            Bias, fairness, and practical hiring
+          </h2>
+          <div className="mt-10 divide-y divide-gray-200 rounded-xl border border-gray-200 bg-white">
+            {[
+              {
+                q: 'How do I remove "background bias" and "socio-economic bias" from technical hiring?',
+                a: 'Three mechanisms: (1) Identity-blind evaluation \u2014 models don\u2019t see names, photos, or college names, (2) Response-based scoring \u2014 we evaluate what candidates say, not where they come from, (3) Pedigree-neutral question design \u2014 questions test job-relevant skills, not access to elite education. The result: candidates from different backgrounds compete on demonstrated capability, not proxies for wealth or opportunity.',
+              },
+              {
+                q: 'How do we hit DE&I goals without lowering technical bars?',
+                a: 'By measuring the right thing. Traditional hiring filters on pedigree, which correlates with socioeconomic status and access \u2014 not capability. LayersRank filters on demonstrated skill. When you stop filtering by proxy and start filtering by performance, you naturally find qualified candidates from more diverse backgrounds. The bar stays the same; you\u2019re just measuring it correctly.',
+              },
+              {
+                q: 'What about "English proficiency noise" in technical evaluations?',
+                a: 'This is a real concern. We mitigate it by: (1) Weighting substance over polish \u2014 clear ideas matter more than perfect grammar, (2) Offering text responses where verbal fluency is less critical, (3) Training on diverse response styles including Indian English. We can\u2019t claim this bias is eliminated, but we work to ensure English fluency doesn\u2019t overwhelm technical signal.',
+              },
+              {
+                q: 'How do you identify "learning velocity" or potential, not just current skills?',
+                a: 'Our behavioral dimension assesses learning orientation: how candidates talk about acquiring new skills, how they respond to feedback, how they approach unfamiliar problems. Combined with technical fundamentals, this gives signal on trajectory \u2014 not just current state. This is especially valuable for campus hiring where experience is limited.',
+              },
+            ].map((faq) => (
+              <details key={faq.q} className="group px-6 py-6">
+                <summary className="flex cursor-pointer items-center justify-between text-[15px] font-semibold text-ink">
+                  {faq.q}
+                  <svg
+                    className="h-5 w-5 shrink-0 text-ink-muted transition-transform group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+                <p className="mt-3 text-sm leading-relaxed text-ink-light">
+                  {faq.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Internal Links */}
-      <section className="bg-paper-off py-16">
+      <section className="bg-paper py-16">
         <div className="mx-auto max-w-7xl px-6">
           <p className="font-mono text-xs uppercase tracking-wider text-ink-muted">
             Related Pages
