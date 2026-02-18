@@ -54,7 +54,7 @@ const caseStudies = [
     tag: 'Enterprise / IT Services',
     color: '#f39c12',
     tagClasses: 'bg-[#f39c12]/10 text-[#f39c12]',
-    slug: null,
+    slug: 'it-services-zero-pedigree-filtering',
     headline: '50,000 Candidates, Zero Pedigree Filtering',
     companyType: 'Large IT Services Company',
     challenge:
