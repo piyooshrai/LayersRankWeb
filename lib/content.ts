@@ -7,6 +7,7 @@ import PostConfidence from '@/content/blog/confidence-weighted-ranking';
 import PostOps from '@/content/blog/interview-operations-at-scale';
 import WhitepaperTrq from '@/content/whitepapers/tr-q-rofns-hiring-whitepaper';
 import WhitepaperGcc from '@/content/whitepapers/gcc-hiring-rigor-benchmark';
+import WhitepaperPedigree from '@/content/whitepapers/pedigree-bias-hiring-whitepaper';
 
 export type PostMeta = {
   slug: string;
@@ -92,6 +93,12 @@ export const whitepapers = [
     title: 'The Science Behind Confidence Scoring',
     description: 'How TR-q-ROFNs transform candidate evaluation. Mathematical foundations, practical applications, and validation data for confidence-aware hiring decisions.',
     component: WhitepaperTrq
+  },
+  {
+    slug: 'pedigree-bias-hiring-whitepaper',
+    title: 'Pedigree Bias in Indian Hiring',
+    description: 'IIT/NIT filtering excludes 99% of engineering graduates. This paper examines what pedigree actually predicts, quantifies the cost, and presents LayersRank data showing how capability-based assessment identifies strong talent that pedigree filtering misses.',
+    component: WhitepaperPedigree
   },
   {
     slug: 'gcc-hiring-rigor-benchmark',

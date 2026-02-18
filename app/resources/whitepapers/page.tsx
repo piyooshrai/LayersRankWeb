@@ -37,7 +37,7 @@ const papers: WhitepaperDef[] = [
     pages: 15,
     audience: 'HR & Leadership',
     format: 'PDF',
-    slug: 'gcc-hiring-rigor-benchmark',
+    slug: 'pedigree-bias-hiring-whitepaper',
     secondaryLabel: null,
     secondaryHref: null,
   },
