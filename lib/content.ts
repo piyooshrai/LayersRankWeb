@@ -9,6 +9,7 @@ import WhitepaperTrq from '@/content/whitepapers/tr-q-rofns-hiring-whitepaper';
 import WhitepaperGcc from '@/content/whitepapers/gcc-hiring-rigor-benchmark';
 import WhitepaperPedigree from '@/content/whitepapers/pedigree-bias-hiring-whitepaper';
 import WhitepaperStructured from '@/content/whitepapers/structured-interviews-whitepaper';
+import CaseStudyGcc from '@/content/case-studies/fortune-500-gcc';
 
 export type PostMeta = {
   slug: string;
@@ -117,4 +118,17 @@ export const whitepapers = [
 
 export function getWhitepaper(slug: string) {
   return whitepapers.find((item) => item.slug === slug);
+}
+
+export const caseStudies = [
+  {
+    slug: 'fortune-500-gcc-panel-disagreement',
+    title: '76% Reduction in Panel Disagreement',
+    description: 'How a Fortune 500 GCC in Bangalore cut panel disagreement from 23% to 5.5%, reduced HQ approval from 11 days to 2.5, and saved ₹4.19 crore annually with LayersRank.',
+    component: CaseStudyGcc
+  },
+];
+
+export function getCaseStudy(slug: string) {
+  return caseStudies.find((item) => item.slug === slug);
 }
