@@ -14,6 +14,7 @@ const caseStudies = [
     tag: 'Enterprise / GCC',
     color: '#3b82f6',
     tagClasses: 'bg-[#3b82f6]/10 text-[#3b82f6]',
+    slug: 'fortune-500-gcc-panel-disagreement',
     headline: '76% Less Panel Disagreement',
     companyType: 'Fortune 500 Global Capability Center, Bangalore',
     challenge:
@@ -33,6 +34,7 @@ const caseStudies = [
     tag: 'Startup',
     color: '#2ecc71',
     tagClasses: 'bg-[#2ecc71]/10 text-[#2ecc71]',
+    slug: null,
     headline: 'First Offer in 5 Days',
     companyType: 'Series B Fintech Startup',
     challenge:
@@ -52,6 +54,7 @@ const caseStudies = [
     tag: 'Enterprise / IT Services',
     color: '#f39c12',
     tagClasses: 'bg-[#f39c12]/10 text-[#f39c12]',
+    slug: null,
     headline: '50,000 Candidates, Zero Pedigree Filtering',
     companyType: 'Large IT Services Company',
     challenge:
@@ -138,7 +141,7 @@ export default function CaseStudiesPage() {
                   {/* CTA */}
                   <div className="mt-6">
                     <Link
-                      href="/demo"
+                      href={study.slug ? `/resources/case-studies/${study.slug}` : '/demo'}
                       className="inline-flex items-center gap-2 text-sm font-semibold text-brand-yellow hover:text-brand-orange"
                     >
                       Read Full Case Study
