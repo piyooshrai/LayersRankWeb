@@ -11,6 +11,7 @@ import WhitepaperPedigree from '@/content/whitepapers/pedigree-bias-hiring-white
 import WhitepaperStructured from '@/content/whitepapers/structured-interviews-whitepaper';
 import CaseStudyGcc from '@/content/case-studies/fortune-500-gcc';
 import CaseStudyFintech from '@/content/case-studies/series-b-fintech-startup';
+import CaseStudyCampus from '@/content/case-studies/it-services-campus-hiring';
 
 export type PostMeta = {
   slug: string;
@@ -133,6 +134,12 @@ export const caseStudies = [
     title: 'First Offer in 5 Days',
     description: 'How a Series B fintech startup in Bangalore cut time-to-offer from 21 days to 5, freed founders from 15 hours/week of screening, and raised offer acceptance to 82% with LayersRank.',
     component: CaseStudyFintech
+  },
+  {
+    slug: 'it-services-zero-pedigree-filtering',
+    title: '50,000 Candidates, Zero Pedigree Filtering',
+    description: 'How a large IT services company assessed 50,000+ campus applicants on capability instead of college name — and found stronger, more diverse, lower-attrition talent at 26% lower cost.',
+    component: CaseStudyCampus
   },
 ];
 
