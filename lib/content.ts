@@ -10,6 +10,7 @@ import WhitepaperGcc from '@/content/whitepapers/gcc-hiring-rigor-benchmark';
 import WhitepaperPedigree from '@/content/whitepapers/pedigree-bias-hiring-whitepaper';
 import WhitepaperStructured from '@/content/whitepapers/structured-interviews-whitepaper';
 import CaseStudyGcc from '@/content/case-studies/fortune-500-gcc';
+import CaseStudyFintech from '@/content/case-studies/series-b-fintech-startup';
 
 export type PostMeta = {
   slug: string;
@@ -126,6 +127,12 @@ export const caseStudies = [
     title: '76% Reduction in Panel Disagreement',
     description: 'How a Fortune 500 GCC in Bangalore cut panel disagreement from 23% to 5.5%, reduced HQ approval from 11 days to 2.5, and saved ₹4.19 crore annually with LayersRank.',
     component: CaseStudyGcc
+  },
+  {
+    slug: 'series-b-fintech-first-offer-5-days',
+    title: 'First Offer in 5 Days',
+    description: 'How a Series B fintech startup in Bangalore cut time-to-offer from 21 days to 5, freed founders from 15 hours/week of screening, and raised offer acceptance to 82% with LayersRank.',
+    component: CaseStudyFintech
   },
 ];
 
