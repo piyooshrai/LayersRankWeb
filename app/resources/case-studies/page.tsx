@@ -34,7 +34,7 @@ const caseStudies = [
     tag: 'Startup',
     color: '#2ecc71',
     tagClasses: 'bg-[#2ecc71]/10 text-[#2ecc71]',
-    slug: null,
+    slug: 'series-b-fintech-first-offer-5-days',
     headline: 'First Offer in 5 Days',
     companyType: 'Series B Fintech Startup',
     challenge:
