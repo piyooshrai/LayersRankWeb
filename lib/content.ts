@@ -8,6 +8,7 @@ import PostOps from '@/content/blog/interview-operations-at-scale';
 import WhitepaperTrq from '@/content/whitepapers/tr-q-rofns-hiring-whitepaper';
 import WhitepaperGcc from '@/content/whitepapers/gcc-hiring-rigor-benchmark';
 import WhitepaperPedigree from '@/content/whitepapers/pedigree-bias-hiring-whitepaper';
+import WhitepaperStructured from '@/content/whitepapers/structured-interviews-whitepaper';
 
 export type PostMeta = {
   slug: string;
@@ -99,6 +100,12 @@ export const whitepapers = [
     title: 'Pedigree Bias in Indian Hiring',
     description: 'IIT/NIT filtering excludes 99% of engineering graduates. This paper examines what pedigree actually predicts, quantifies the cost, and presents LayersRank data showing how capability-based assessment identifies strong talent that pedigree filtering misses.',
     component: WhitepaperPedigree
+  },
+  {
+    slug: 'structured-interviews-whitepaper',
+    title: 'Structured vs. Unstructured Interviews',
+    description: 'Decades of research show structured interviews outperform unstructured interviews. This paper summarizes the evidence, explains how LayersRank implements structured principles at scale, and provides ROI analysis.',
+    component: WhitepaperStructured
   },
   {
     slug: 'gcc-hiring-rigor-benchmark',

@@ -52,7 +52,7 @@ const papers: WhitepaperDef[] = [
     pages: 12,
     audience: 'General',
     format: 'PDF',
-    slug: 'structured-interviews',
+    slug: 'structured-interviews-whitepaper',
     secondaryLabel: null,
     secondaryHref: null,
   },
