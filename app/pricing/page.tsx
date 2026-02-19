@@ -498,6 +498,34 @@ export default function PricingPage() {
         </div>
       </section>
 
+      {/* ── Hiring Cost Calculator CTA ──────────────────── */}
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-5xl px-6">
+          <Link
+            href="/resources/roi-calculator"
+            className="block rounded-2xl border-2 border-brand-yellow/20 bg-brand-yellow/5 p-6 transition-colors hover:border-brand-yellow/40 md:p-8"
+          >
+            <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-brand-yellow/20">
+                <svg className="h-7 w-7 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <p className="font-mono text-xs uppercase tracking-[0.25em] text-brand-yellow">Free Tool</p>
+                <p className="mt-1 text-lg font-bold text-ink">How Much Are Bad Hires Costing You?</p>
+                <p className="mt-1 text-sm text-ink-light">
+                  Calculate the true cost of mis-hires and see how structured interviews reduce it by 40&ndash;60%.
+                </p>
+              </div>
+              <span className="shrink-0 rounded-lg bg-brand-yellow px-4 py-2 text-sm font-semibold text-ink">
+                Calculate Now &rarr;
+              </span>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* ── Why Per-Assessment Pricing ───────────────────── */}
       <section className="bg-white py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-6">

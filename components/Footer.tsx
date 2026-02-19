@@ -40,7 +40,15 @@ const footerColumns = [
       { label: 'Whitepapers', href: '/resources/whitepapers' },
       { label: 'Case Studies', href: '/resources/case-studies' },
       { label: 'Sample Report', href: '/resources/sample-report' },
-      { label: 'ROI Calculator', href: '/resources/roi-calculator' },
+    ],
+  },
+  {
+    title: 'Free Resources',
+    links: [
+      { label: 'Hiring Cost Calculator', href: '/resources/roi-calculator' },
+      { label: 'Question Bank', href: '/resources/question-bank' },
+      { label: 'Hiring Scorecard', href: '/resources/hiring-scorecard' },
+      { label: 'Bias Audit Checklist', href: '/resources/bias-audit' },
     ],
   },
   {
@@ -63,7 +71,7 @@ export function Footer() {
     <footer className="border-t border-gray-200 bg-ink text-white">
       <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
         {/* Main Footer Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7">
           {/* Brand Column */}
           <div className="sm:col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="inline-block">
