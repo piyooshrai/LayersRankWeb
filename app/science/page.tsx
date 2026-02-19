@@ -285,7 +285,7 @@ Refusal degree: πᵢ = (1 - (μᵢ)^q - (νᵢ)^q)^(1/q)
                   Divergent signals. Something about the response is ambiguous — different reasonable
                   evaluation approaches see different things. This disagreement isn&apos;t a problem to
                   hide. It&apos;s information to surface. Our{' '}
-                  <Link href="/product/adaptive-interviews" className="text-brand-yellow hover:underline">
+                  <Link href="/product/adaptive-questioning" className="text-brand-yellow hover:underline">
                     Adaptive Follow-Up
                   </Link>{' '}
                   system uses disagreement as a trigger.
@@ -352,7 +352,7 @@ Refusal degree: πᵢ = (1 - (μᵢ)^q - (νᵢ)^q)^(1/q)
               </pre>
             </div>
             <p className="mt-4 text-sm">
-              <Link href="/science/explainable-ai" className="font-medium text-brand-yellow hover:underline">
+              <Link href="/science/explainability" className="font-medium text-brand-yellow hover:underline">
                 See our Explainable AI page for how this works in practice →
               </Link>
             </p>

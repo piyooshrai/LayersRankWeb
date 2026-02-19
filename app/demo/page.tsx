@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { ImagePlaceholder } from '@/components/image-placeholder';
+import { DemoForm } from '@/components/demo-form';
 import { makeMetadata } from '@/lib/seo';
 
 export const metadata = makeMetadata({
@@ -69,85 +69,7 @@ export default function DemoPage() {
             {/* Right: Form */}
             <div className="space-y-8">
             <ImagePlaceholder label="Platform demo preview" search="software demo presentation screen" />
-            <div className="rounded-2xl border border-gray-700 bg-gray-800/50 p-8">
-              <h2 className="text-xl font-bold">Request a demo</h2>
-              <p className="mt-2 text-sm text-gray-400">
-                Fill out the form and we&apos;ll schedule a personalized walkthrough.
-              </p>
-              <form className="mt-6 space-y-4">
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-300">First name</label>
-                    <input
-                      id="firstName"
-                      type="text"
-                      className="mt-1 w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2.5 text-sm text-white placeholder-gray-400 focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
-                      placeholder="Priya"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-300">Last name</label>
-                    <input
-                      id="lastName"
-                      type="text"
-                      className="mt-1 w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2.5 text-sm text-white placeholder-gray-400 focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
-                      placeholder="Sharma"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300">Work email</label>
-                  <input
-                    id="email"
-                    type="email"
-                    className="mt-1 w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2.5 text-sm text-white placeholder-gray-400 focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
-                    placeholder="priya@company.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-300">Company</label>
-                  <input
-                    id="company"
-                    type="text"
-                    className="mt-1 w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2.5 text-sm text-white placeholder-gray-400 focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
-                    placeholder="Your company"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="teamSize" className="block text-sm font-medium text-gray-300">Hiring team size</label>
-                  <select
-                    id="teamSize"
-                    className="mt-1 w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2.5 text-sm text-white focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
-                  >
-                    <option value="">Select team size</option>
-                    <option value="1-10">1-10 people</option>
-                    <option value="11-50">11-50 people</option>
-                    <option value="51-200">51-200 people</option>
-                    <option value="201-1000">201-1,000 people</option>
-                    <option value="1000+">1,000+ people</option>
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300">What are you looking to solve?</label>
-                  <textarea
-                    id="message"
-                    rows={3}
-                    className="mt-1 w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2.5 text-sm text-white placeholder-gray-400 focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
-                    placeholder="Tell us about your hiring challenges..."
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full rounded-lg bg-brand-yellow py-3 text-sm font-semibold text-ink transition-colors hover:bg-brand-orange"
-                >
-                  Request Demo
-                </button>
-                <p className="text-center text-xs text-gray-500">
-                  By submitting, you agree to our{' '}
-                  <Link href="/legal/privacy" className="underline">Privacy Policy</Link>.
-                </p>
-              </form>
-            </div>
+            <DemoForm />
             </div>
           </div>
         </div>

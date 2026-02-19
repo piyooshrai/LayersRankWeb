@@ -818,7 +818,7 @@ export default function CompareHireVuePage() {
               vs Codility &rarr;
             </Link>
             <Link
-              href="/science/confidence-scoring"
+              href="/product/confidence-scoring"
               className="rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-ink hover:border-brand-yellow hover:bg-brand-yellow/5"
             >
               Confidence Scoring &rarr;

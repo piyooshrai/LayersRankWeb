@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { NewsletterForm } from '@/components/newsletter-form';
 
 const footerColumns = [
   {
@@ -142,15 +143,8 @@ export function Footer() {
               Get research-backed insights on structured hiring, delivered monthly.
             </p>
           </div>
-          <div className="mt-4 flex gap-2 md:mt-0">
-            <input
-              type="email"
-              placeholder="your@email.com"
-              className="w-full rounded-md border border-gray-600 bg-gray-700 px-4 py-2 text-sm text-white placeholder-gray-400 focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow md:w-auto"
-            />
-            <button className="whitespace-nowrap rounded-md bg-brand-yellow px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-brand-orange">
-              Subscribe
-            </button>
+          <div className="mt-4 md:mt-0">
+            <NewsletterForm variant="footer" />
           </div>
         </div>
 

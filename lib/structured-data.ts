@@ -80,13 +80,6 @@ export const softwareSchema = {
     priceCurrency: 'USD',
     description: '5 free assessments. No credit card required.',
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.8',
-    reviewCount: '47',
-    bestRating: '5',
-    worstRating: '1',
-  },
   publisher: {
     '@id': `${siteConfig.url}/#organization`,
   },

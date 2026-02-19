@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { NewsletterForm } from '@/components/newsletter-form';
 
 type Category = 'all' | 'operations' | 'product' | 'results' | 'science';
 
@@ -218,22 +219,7 @@ export default function BlogPage() {
           <p className="mt-3 text-ink-light">
             No spam. Just practical thinking on structured hiring, delivered once a month.
           </p>
-          <form
-            className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <input
-              type="email"
-              placeholder="you@company.com"
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-ink placeholder:text-ink-muted focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow sm:w-72"
-            />
-            <button
-              type="submit"
-              className="rounded-lg bg-brand-yellow px-6 py-3 font-semibold text-ink hover:bg-brand-orange"
-            >
-              Subscribe
-            </button>
-          </form>
+          <NewsletterForm variant="inline" />
         </div>
       </section>
 

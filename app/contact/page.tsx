@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { PageHero, PageCTA } from '@/components/page-sections';
+import { PageHero } from '@/components/page-sections';
+import { ContactForm } from '@/components/contact-form';
 import { makeMetadata } from '@/lib/seo';
 
 export const metadata = makeMetadata({
@@ -26,71 +26,7 @@ export default function ContactPage() {
           <p className="mt-2 text-ink-light">
             Fill out the form below and we&apos;ll get back to you within one business day.
           </p>
-          <form className="mt-8 space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-ink">
-                Name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-ink placeholder-ink-muted focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
-                placeholder="Your full name"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-ink">
-                Work Email
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-ink placeholder-ink-muted focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
-                placeholder="you@company.com"
-              />
-            </div>
-            <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-ink">
-                Subject
-              </label>
-              <select
-                id="subject"
-                name="subject"
-                required
-                className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-ink focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
-              >
-                <option value="">Select a subject</option>
-                <option value="sales">Sales Inquiry</option>
-                <option value="support">Support</option>
-                <option value="partnership">Partnership</option>
-                <option value="press">Press</option>
-                <option value="general">General</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-ink">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                required
-                className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-ink placeholder-ink-muted focus:border-brand-yellow focus:outline-none focus:ring-1 focus:ring-brand-yellow"
-                placeholder="Tell us how we can help..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full rounded-lg bg-brand-yellow px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-brand-orange"
-            >
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </section>
 
