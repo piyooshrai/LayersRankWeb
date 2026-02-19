@@ -70,11 +70,51 @@ export const navDropdowns: NavDropdown[] = [
   },
   {
     label: 'Compare',
-    items: [
-      { href: '/compare/hirevue', label: 'vs HireVue', description: 'Video interview comparison' },
-      { href: '/compare/hackerrank', label: 'vs HackerRank', description: 'Coding assessment comparison' },
-      { href: '/compare/codility', label: 'vs Codility', description: 'Technical screening comparison' },
-      { href: '/compare/traditional', label: 'vs Traditional', description: 'Replace manual screening' },
+    groups: [
+      {
+        label: 'vs Competitors',
+        items: [
+          { href: '/compare/hirevue', label: 'vs HireVue', description: 'Video interview comparison' },
+          { href: '/compare/hackerrank', label: 'vs HackerRank', description: 'Coding assessment comparison' },
+          { href: '/compare/codility', label: 'vs Codility', description: 'Technical screening comparison' },
+          { href: '/compare/traditional', label: 'vs Traditional', description: 'Replace manual screening' },
+        ],
+      },
+      {
+        label: 'Alternatives',
+        items: [
+          { href: '/alternative/hirevue', label: 'HireVue Alternative', description: 'Confidence scoring, India-first' },
+          { href: '/alternative/hackerrank', label: 'HackerRank Alternative', description: 'Beyond coding tests' },
+          { href: '/alternative/codility', label: 'Codility Alternative', description: 'Engineering judgment' },
+          { href: '/alternative/mettl', label: 'Mettl Alternative', description: 'Modern UX, confidence scores' },
+          { href: '/alternative/testgorilla', label: 'TestGorilla Alternative', description: 'Judgment over knowledge' },
+        ],
+      },
+    ],
+  },
+  {
+    label: 'Hire',
+    groups: [
+      {
+        label: 'Engineering',
+        items: [
+          { href: '/hire/backend-engineer', label: 'Backend Engineer', description: 'System design & API architecture' },
+          { href: '/hire/frontend-engineer', label: 'Frontend Engineer', description: 'UI architecture & performance' },
+          { href: '/hire/full-stack-developer', label: 'Full Stack Developer', description: 'End-to-end feature delivery' },
+          { href: '/hire/devops-engineer', label: 'DevOps Engineer', description: 'Infrastructure & reliability' },
+          { href: '/hire/qa-engineer', label: 'QA Engineer', description: 'Testing strategy & automation' },
+        ],
+      },
+      {
+        label: 'Data & Leadership',
+        items: [
+          { href: '/hire/data-engineer', label: 'Data Engineer', description: 'Pipelines & data modeling' },
+          { href: '/hire/data-scientist', label: 'Data Scientist', description: 'Statistical thinking & ML' },
+          { href: '/hire/machine-learning-engineer', label: 'ML Engineer', description: 'Models to production' },
+          { href: '/hire/product-manager', label: 'Product Manager', description: 'Product sense & delivery' },
+          { href: '/hire/engineering-manager', label: 'Engineering Manager', description: 'People & technical leadership' },
+        ],
+      },
     ],
   },
   {

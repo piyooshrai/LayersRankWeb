@@ -31,6 +31,23 @@ const footerColumns = [
       { label: 'vs HackerRank', href: '/compare/hackerrank' },
       { label: 'vs Codility', href: '/compare/codility' },
       { label: 'vs Traditional', href: '/compare/traditional' },
+      { label: 'HireVue Alternative', href: '/alternative/hirevue' },
+      { label: 'Mettl Alternative', href: '/alternative/mettl' },
+      { label: 'TestGorilla Alternative', href: '/alternative/testgorilla' },
+    ],
+  },
+  {
+    title: 'Hire by Role',
+    links: [
+      { label: 'Backend Engineer', href: '/hire/backend-engineer' },
+      { label: 'Frontend Engineer', href: '/hire/frontend-engineer' },
+      { label: 'Full Stack Developer', href: '/hire/full-stack-developer' },
+      { label: 'DevOps Engineer', href: '/hire/devops-engineer' },
+      { label: 'Data Scientist', href: '/hire/data-scientist' },
+      { label: 'ML Engineer', href: '/hire/machine-learning-engineer' },
+      { label: 'Product Manager', href: '/hire/product-manager' },
+      { label: 'Engineering Manager', href: '/hire/engineering-manager' },
+      { label: 'QA Engineer', href: '/hire/qa-engineer' },
     ],
   },
   {
@@ -71,7 +88,7 @@ export function Footer() {
     <footer className="border-t border-gray-200 bg-ink text-white">
       <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
         {/* Main Footer Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7">
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-9">
           {/* Brand Column */}
           <div className="sm:col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="inline-block">
