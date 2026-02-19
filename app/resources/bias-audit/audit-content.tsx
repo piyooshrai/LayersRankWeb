@@ -452,6 +452,7 @@ export function AuditContent() {
                 title="Get Your Audit Results"
                 description="Enter your email to unlock your bias audit score, priority matrix, and action plan template."
                 ctaLabel="Get My Results"
+                leadMagnetType="bias"
                 onSubmit={() => setUnlocked(true)}
               />
             </>

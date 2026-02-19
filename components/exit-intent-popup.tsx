@@ -1,75 +1,157 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
+import { usePathname } from 'next/navigation';
+import { trackEvent } from '@/lib/analytics';
 
-const resources = [
+/* ── Resource definitions ──────────────────────────────── */
+
+interface Resource {
+  title: string;
+  description: string;
+  href: string;
+  pages: string[];
+}
+
+const resources: Resource[] = [
   {
     title: 'Hiring Cost Calculator',
     description: 'Find out how much bad hires are really costing you',
     href: '/resources/roi-calculator',
+    pages: ['/pricing', '/solutions/startups', '/solutions/enterprise'],
   },
   {
     title: 'Interview Question Bank',
-    description: 'Role-specific questions with scoring rubrics',
+    description: '50 behavioral questions with scoring rubrics',
     href: '/resources/question-bank',
+    pages: ['/product/structured-interviews', '/product', '/product/adaptive-questioning'],
   },
   {
     title: 'Hiring Scorecard Template',
     description: 'Structured evaluation framework for your team',
     href: '/resources/hiring-scorecard',
+    pages: ['/solutions/gcc', '/solutions/agencies'],
   },
   {
     title: 'Bias Audit Checklist',
-    description: 'Identify and eliminate bias in your hiring process',
+    description: '12-point check for fair, defensible hiring',
     href: '/resources/bias-audit',
+    pages: ['/science/bias-mitigation', '/science', '/solutions/campus-hiring'],
   },
 ];
 
-export function ExitIntentPopup() {
-  const [show, setShow] = useState(false);
-  const [dismissed, setDismissed] = useState(false);
+/* ── Cookie helpers ────────────────────────────────────── */
 
+const DISMISS_COOKIE = 'lr_exit_dismiss';
+const CONVERT_COOKIE = 'lr_exit_convert';
+
+function getCookie(name: string): string | null {
+  if (typeof document === 'undefined') return null;
+  const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
+function setCookie(name: string, value: string, days: number) {
+  if (typeof document === 'undefined') return;
+  const expires = new Date(Date.now() + days * 864e5).toUTCString();
+  document.cookie = `${name}=${encodeURIComponent(value)};expires=${expires};path=/;SameSite=Lax`;
+}
+
+/* ── Component ─────────────────────────────────────────── */
+
+export function ExitIntentPopup() {
+  const pathname = usePathname();
+  const [show, setShow] = useState(false);
+  const [suppressed, setSuppressed] = useState(false);
+  const maxScrollRef = useRef(0);
+  const lastScrollYRef = useRef(0);
+  const hasFiredRef = useRef(false);
+
+  // Check cookies on mount
+  useEffect(() => {
+    if (getCookie(DISMISS_COOKIE) || getCookie(CONVERT_COOKIE)) {
+      setSuppressed(true);
+    }
+  }, []);
+
+  // Select the most relevant resource for the current page
+  const sortedResources = (() => {
+    const matched = resources.find((r) =>
+      r.pages.some((p) => pathname.startsWith(p)),
+    );
+    if (!matched) return resources;
+    return [matched, ...resources.filter((r) => r !== matched)];
+  })();
+
+  // Desktop: mouse leave viewport
   const handleMouseLeave = useCallback(
     (e: MouseEvent) => {
-      if (e.clientY <= 0 && !dismissed) {
+      if (e.clientY <= 0 && !suppressed && !hasFiredRef.current) {
+        hasFiredRef.current = true;
         setShow(true);
+        trackEvent('exit_intent_popup', { trigger: 'mouse_leave', page: pathname });
       }
     },
-    [dismissed],
+    [suppressed, pathname],
   );
 
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
+  // Mobile: scroll-up after 50% page depth
+  const handleScroll = useCallback(() => {
+    if (suppressed || hasFiredRef.current) return;
 
-    try {
-      if (sessionStorage.getItem('exit-popup-dismissed')) {
-        setDismissed(true);
-        return;
-      }
-    } catch {
-      // sessionStorage may not be available
+    const scrollY = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pctScrolled = docHeight > 0 ? scrollY / docHeight : 0;
+
+    if (pctScrolled > maxScrollRef.current) {
+      maxScrollRef.current = pctScrolled;
     }
+
+    // Trigger if user scrolled past 50% and is now scrolling up significantly
+    if (maxScrollRef.current >= 0.5 && scrollY < lastScrollYRef.current - 100) {
+      hasFiredRef.current = true;
+      setShow(true);
+      trackEvent('exit_intent_popup', { trigger: 'scroll_up', page: pathname });
+    }
+
+    lastScrollYRef.current = scrollY;
+  }, [suppressed, pathname]);
+
+  // Don't show on resource pages themselves
+  const isResourcePage = pathname.startsWith('/resources/roi-calculator')
+    || pathname.startsWith('/resources/question-bank')
+    || pathname.startsWith('/resources/hiring-scorecard')
+    || pathname.startsWith('/resources/bias-audit');
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || suppressed || isResourcePage) return;
 
     // Delay attaching to avoid triggering on initial page load
     const timer = setTimeout(() => {
       document.addEventListener('mouseout', handleMouseLeave);
+      window.addEventListener('scroll', handleScroll, { passive: true });
     }, 5000);
 
     return () => {
       clearTimeout(timer);
       document.removeEventListener('mouseout', handleMouseLeave);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, [handleMouseLeave]);
+  }, [handleMouseLeave, handleScroll, suppressed, isResourcePage]);
 
   function dismiss() {
     setShow(false);
-    setDismissed(true);
-    try {
-      sessionStorage.setItem('exit-popup-dismissed', 'true');
-    } catch {
-      // ignore
-    }
+    setSuppressed(true);
+    setCookie(DISMISS_COOKIE, '1', 7);
+    trackEvent('exit_intent_dismiss', { page: pathname });
+  }
+
+  function handleConvert(href: string) {
+    setShow(false);
+    setSuppressed(true);
+    setCookie(CONVERT_COOKIE, '1', 365);
+    trackEvent('exit_intent_click', { resource: href, page: pathname });
   }
 
   if (!show) return null;
@@ -101,12 +183,16 @@ export function ExitIntentPopup() {
         </div>
 
         <div className="mt-6 space-y-3">
-          {resources.map((resource) => (
+          {sortedResources.map((resource, i) => (
             <Link
               key={resource.href}
               href={resource.href}
-              onClick={dismiss}
-              className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white p-4 transition-colors hover:border-brand-yellow hover:bg-brand-yellow/5"
+              onClick={() => handleConvert(resource.href)}
+              className={`flex items-center gap-3 rounded-xl border p-4 transition-colors hover:border-brand-yellow hover:bg-brand-yellow/5 ${
+                i === 0
+                  ? 'border-brand-yellow/40 bg-brand-yellow/5'
+                  : 'border-gray-200 bg-white'
+              }`}
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-yellow/10">
                 <svg className="h-5 w-5 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -114,7 +200,14 @@ export function ExitIntentPopup() {
                 </svg>
               </div>
               <div>
-                <p className="text-sm font-semibold text-ink">{resource.title}</p>
+                <p className="text-sm font-semibold text-ink">
+                  {resource.title}
+                  {i === 0 && (
+                    <span className="ml-2 rounded-full bg-brand-yellow/20 px-2 py-0.5 text-[10px] font-bold text-brand-yellow">
+                      Recommended
+                    </span>
+                  )}
+                </p>
                 <p className="text-xs text-ink-muted">{resource.description}</p>
               </div>
               <svg className="ml-auto h-4 w-4 shrink-0 text-ink-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor">
