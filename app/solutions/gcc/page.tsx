@@ -3,6 +3,7 @@ import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
 import { ImagePlaceholder } from '@/components/image-placeholder';
 import { JsonLd } from '@/components/json-ld';
+import { LeadMagnetCTA } from '@/components/lead-magnet-cta';
 
 export const metadata = makeMetadata({
   title: 'GCC Hiring Automation India | LayersRank for Global Capability Centers',
@@ -723,6 +724,9 @@ export default function GccPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Lead Magnet CTA ── */}
+      <LeadMagnetCTA type="scorecard" />
 
       {/* ── FINAL CTA ── */}
       <PageCTA

@@ -377,6 +377,7 @@ export function ScorecardContent() {
               title="Unlock the Full Scorecard"
               description="Get detailed behavioral anchors for all 6 competencies, the red flag checklist, calibration guide, and implementation plan."
               ctaLabel="Get Full Scorecard"
+              leadMagnetType="scorecard"
               onSubmit={() => setUnlocked(true)}
             />
           </div>

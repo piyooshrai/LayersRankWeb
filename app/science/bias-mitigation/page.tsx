@@ -1,5 +1,6 @@
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
+import { LeadMagnetCTA } from '@/components/lead-magnet-cta';
 import Link from 'next/link';
 
 export const metadata = makeMetadata({
@@ -814,6 +815,9 @@ export default function BiasMitigationPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Lead Magnet CTA ── */}
+      <LeadMagnetCTA type="bias" />
 
       {/* Final CTA */}
       <PageCTA

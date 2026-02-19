@@ -3,6 +3,7 @@ import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
 import { ImagePlaceholder } from '@/components/image-placeholder';
 import { JsonLd } from '@/components/json-ld';
+import { LeadMagnetCTA } from '@/components/lead-magnet-cta';
 
 export const metadata = makeMetadata({
   title: 'Enterprise Hiring Platform India | Tata Reliance Infosys Scale Recruitment | LayersRank',
@@ -651,6 +652,9 @@ export default function EnterprisePage() {
           </div>
         </div>
       </section>
+
+      {/* ── Lead Magnet CTA ── */}
+      <LeadMagnetCTA type="scorecard" />
 
       {/* ── FINAL CTA ── */}
       <PageCTA

@@ -372,6 +372,7 @@ export function HiringCostCalculator() {
                   title="Unlock Your Full Report"
                   description="See the complete cost breakdown, what LayersRank saves you, and a downloadable summary."
                   ctaLabel="Get My Full Report"
+                  leadMagnetType="roi"
                   onSubmit={handleGateSubmit}
                 />
               </div>

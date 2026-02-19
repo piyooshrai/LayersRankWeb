@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/json-ld';
 import { ImagePlaceholder } from '@/components/image-placeholder';
+import { LeadMagnetCTA } from '@/components/lead-magnet-cta';
 
 export const metadata = makeMetadata({
   title: 'Structured Interview Platform | Video, Text & MCQ Assessments | LayersRank',
@@ -1050,6 +1051,9 @@ export default function StructuredInterviewsPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Lead Magnet CTA ── */}
+      <LeadMagnetCTA type="questions" />
 
       {/* ───── FAQ ───── */}
       <section className="bg-paper py-20">

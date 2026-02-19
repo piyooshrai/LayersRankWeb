@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/json-ld';
 import { CostCalculator } from './cost-calculator';
+import { LeadMagnetCTA } from '@/components/lead-magnet-cta';
 
 export const metadata = makeMetadata({
   title: 'Pricing | LayersRank - AI-Powered Candidate Evaluation',
@@ -1123,6 +1124,9 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Lead Magnet CTA ────────────────────────────────── */}
+      <LeadMagnetCTA type="roi" />
 
       {/* ── Final CTA ────────────────────────────────────── */}
       <section className="gradient-cta py-16">

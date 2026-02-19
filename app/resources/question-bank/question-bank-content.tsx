@@ -235,6 +235,7 @@ export function QuestionBankContent() {
                 title="Unlock All 50 Questions"
                 description="You've seen Section 1. Enter your email to access all 5 sections with scoring rubrics and best practices."
                 ctaLabel="Get Full Question Bank"
+                leadMagnetType="questions"
                 onSubmit={() => setUnlocked(true)}
               />
             </div>
