@@ -601,13 +601,12 @@ export default function ProductPage() {
               <h3 className="text-lg font-bold text-ink">SSO &amp; Security</h3>
               <p className="mt-3 text-sm leading-relaxed text-ink-light">
                 Enterprise plans include SAML and OAuth SSO. Role-based access controls. Audit logs.
-                SOC 2 Type II certified. GDPR compliant. India data residency available.
               </p>
               <Link
-                href="/security"
+                href="/contact"
                 className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-yellow hover:text-brand-orange"
               >
-                View security details
+                Contact us for details
                 <svg
                   className="h-4 w-4"
                   fill="none"

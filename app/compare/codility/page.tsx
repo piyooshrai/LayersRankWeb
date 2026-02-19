@@ -582,19 +582,6 @@ export default function CompareCodilityPage() {
               </div>
             </div>
 
-            <div>
-              <h3 className="text-lg font-bold text-ink">Compliance</h3>
-              <div className="mt-4">
-                <ComparisonTable
-                  headers={['Feature', 'Codility', 'LayersRank']}
-                  rows={[
-                    { feature: 'SOC 2', them: '✓', us: '✓' },
-                    { feature: 'GDPR', them: '✓', us: '✓' },
-                    { feature: 'India data residency', them: '✗', us: '✓' },
-                  ]}
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>

@@ -486,26 +486,6 @@ export default function CompareHireVuePage() {
               </div>
             </div>
 
-            {/* Compliance and Security */}
-            <div>
-              <h3 className="text-lg font-bold text-ink">Compliance and Security</h3>
-              <div className="mt-4">
-                <ComparisonTable
-                  headers={['Certification', 'HireVue', 'LayersRank']}
-                  rows={[
-                    { feature: 'SOC 2 Type II', them: '✓', us: '✓' },
-                    { feature: 'ISO 27001', them: '✓', us: 'Aligned' },
-                    { feature: 'GDPR', them: '✓', us: '✓' },
-                    { feature: 'FedRAMP', them: '✓', us: '✗' },
-                    { feature: 'India Data Residency', them: '✗', us: '✓' },
-                  ]}
-                />
-              </div>
-              <p className="mt-3 text-sm text-ink-muted">
-                HireVue has FedRAMP certification for US government work. LayersRank has India data
-                residency for Indian compliance requirements.
-              </p>
-            </div>
           </div>
         </div>
       </section>

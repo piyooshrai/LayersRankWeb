@@ -337,8 +337,6 @@ export default function EnterprisePage() {
                 {[
                   'India data residency (AWS Mumbai region)',
                   'Encryption at rest and in transit',
-                  'DPDP Act compliance ready',
-                  'ISO 27001 aligned practices',
                   'Regular security audits',
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-sm text-ink-light">

@@ -984,10 +984,10 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* ── Security & Compliance ────────────────────────── */}
+      {/* ── Security ────────────────────────────────────── */}
       <section className="bg-paper-off py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-2xl font-bold tracking-tight text-ink md:text-3xl">Security &amp; Compliance</h2>
+          <h2 className="text-2xl font-bold tracking-tight text-ink md:text-3xl">Security</h2>
 
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             <div className="rounded-xl border border-gray-200 bg-white p-6">
@@ -996,28 +996,6 @@ export default function PricingPage() {
                 All customer data stored in India (AWS Mumbai region).
                 No data leaves India unless explicitly configured.
               </p>
-            </div>
-
-            <div className="rounded-xl border border-gray-200 bg-white p-6">
-              <h3 className="text-lg font-bold text-ink">Compliance</h3>
-              <ul className="mt-3 space-y-2 text-sm text-ink-light">
-                <li className="flex items-start gap-2">
-                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-brand-green" />
-                  SOC 2 Type II (in progress)
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-brand-green" />
-                  ISO 27001 aligned
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-brand-green" />
-                  DPDP Act compliant
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-brand-green" />
-                  GDPR compliant for EU candidates
-                </li>
-              </ul>
             </div>
 
             <div className="rounded-xl border border-gray-200 bg-white p-6">

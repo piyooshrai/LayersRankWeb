@@ -99,23 +99,10 @@ export default function AboutPage() {
       {/* Our Hubs — dark bg */}
       <section className="bg-ink py-20 text-white">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-2xl font-bold">Our Hubs</h2>
+          <h2 className="text-2xl font-bold">Where We Operate</h2>
           <p className="mt-2 max-w-3xl text-gray-300">
-            We operate across India&apos;s major tech corridors and are expanding into the Middle East.
+            We serve teams across India and are expanding into the Middle East.
           </p>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {['Bangalore', 'Hyderabad', 'Pune', 'NCR'].map((city) => (
-              <div key={city} className="rounded-xl border border-gray-600 bg-white/5 p-6">
-                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-yellow/10 text-brand-yellow">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold">{city}</h3>
-              </div>
-            ))}
-          </div>
           <div className="mt-10 rounded-xl border border-gray-600 bg-white/5 p-6">
             <p className="text-sm text-gray-300">
               <span className="font-semibold text-brand-yellow">Expanding soon:</span> KSA and UAE.
@@ -137,8 +124,8 @@ export default function AboutPage() {
         description="Help us make hiring decisions confident and fair for every organization."
         cta="Book a Demo"
         ctaHref="/demo"
-        secondaryCta="View Careers"
-        secondaryCtaHref="/careers"
+        secondaryCta="Contact Us"
+        secondaryCtaHref="/contact"
       />
     </>
   );
