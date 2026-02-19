@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import '@/styles/globals.css';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
+import { ExitIntentPopup } from '@/components/exit-intent-popup';
 import { JsonLd } from '@/components/json-ld';
 import { organizationSchema, softwareApplicationSchema } from '@/lib/schema';
 import { siteConfig } from '@/lib/site';
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navigation />
         <main>{children}</main>
         <Footer />
+        <ExitIntentPopup />
       </body>
     </html>
   );

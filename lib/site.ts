@@ -79,12 +79,25 @@ export const navDropdowns: NavDropdown[] = [
   },
   {
     label: 'Resources',
-    items: [
-      { href: '/blog', label: 'Blog', description: 'Insights on hiring operations' },
-      { href: '/resources/whitepapers', label: 'Whitepapers', description: 'Technical deep-dives' },
-      { href: '/resources/case-studies', label: 'Case Studies', description: 'Customer success stories' },
-      { href: '/resources/roi-calculator', label: 'ROI Calculator', description: 'Estimate your savings' },
-      { href: '/resources/sample-report', label: 'Sample Report', description: 'See a real candidate report', featured: true },
+    groups: [
+      {
+        label: 'Content',
+        items: [
+          { href: '/blog', label: 'Blog', description: 'Insights on hiring operations' },
+          { href: '/resources/whitepapers', label: 'Whitepapers', description: 'Technical deep-dives' },
+          { href: '/resources/case-studies', label: 'Case Studies', description: 'Customer success stories' },
+          { href: '/resources/sample-report', label: 'Sample Report', description: 'See a real candidate report', featured: true },
+        ],
+      },
+      {
+        label: 'Free Tools',
+        items: [
+          { href: '/resources/roi-calculator', label: 'Hiring Cost Calculator', description: 'Calculate your mis-hire costs', featured: true },
+          { href: '/resources/question-bank', label: 'Question Bank', description: 'Role-specific interview questions' },
+          { href: '/resources/hiring-scorecard', label: 'Hiring Scorecard', description: 'Structured evaluation template' },
+          { href: '/resources/bias-audit', label: 'Bias Audit Checklist', description: 'Identify bias in your process' },
+        ],
+      },
     ],
   },
 ];
