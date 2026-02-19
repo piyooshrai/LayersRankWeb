@@ -64,6 +64,28 @@ Science pages: https://www.layersrank.com/science
 - UK: London, UK | +44 7477 204642
 - US: Denver, CO | +1 720 334 7249
 
+## Hire by Role
+
+Structured assessments designed for specific roles:
+- Backend Engineer: https://www.layersrank.com/hire/backend-engineer
+- Frontend Engineer: https://www.layersrank.com/hire/frontend-engineer
+- Full Stack Developer: https://www.layersrank.com/hire/full-stack-developer
+- DevOps Engineer: https://www.layersrank.com/hire/devops-engineer
+- Data Engineer: https://www.layersrank.com/hire/data-engineer
+- Data Scientist: https://www.layersrank.com/hire/data-scientist
+- Machine Learning Engineer: https://www.layersrank.com/hire/machine-learning-engineer
+- Product Manager: https://www.layersrank.com/hire/product-manager
+- Engineering Manager: https://www.layersrank.com/hire/engineering-manager
+- QA Engineer: https://www.layersrank.com/hire/qa-engineer
+
+## Alternatives
+
+- HireVue Alternative: https://www.layersrank.com/alternative/hirevue
+- HackerRank Alternative: https://www.layersrank.com/alternative/hackerrank
+- Codility Alternative: https://www.layersrank.com/alternative/codility
+- Mettl Alternative: https://www.layersrank.com/alternative/mettl
+- TestGorilla Alternative: https://www.layersrank.com/alternative/testgorilla
+
 ## Optional
 
 - Demo: https://www.layersrank.com/demo
