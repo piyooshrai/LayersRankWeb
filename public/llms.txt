@@ -1,0 +1,72 @@
+# LayersRank — AI Hiring Intelligence Platform
+
+> LayersRank is a confidence-weighted hiring infrastructure platform built for engineering and technical recruiting. We use structured interviews, explainable AI scoring, and fuzzy-logic confidence intervals to help GCCs, enterprises, and startups make defensible, consistent hiring decisions.
+
+## What We Do
+
+LayersRank delivers AI-powered candidate assessment that is:
+- Structured: every candidate receives the same adaptive question sequence
+- Explainable: every score includes an evidence trail, not just a number
+- Unbiased: models evaluate responses, not pedigree — names, colleges, and company brands are not visible to scoring models
+- Defensible: all decisions are documented for audit review
+
+## Core Product Features
+
+- Structured Interviews: role-specific question banks with adaptive follow-up
+- Confidence Scoring: Bayesian confidence intervals on every competency score
+- Adaptive Questioning: when confidence is low, the system generates clarifying follow-ups
+- Integrity Detection: automated inconsistency and contradiction flagging
+- Candidate Reports: audit-ready dossiers exportable to PDF or ATS
+
+## Who We Serve
+
+- GCC (Global Capability Centers): high-volume, high-consistency technical hiring across India
+- Enterprises: Tata, Reliance, Infosys scale — multiple business units, centralized evaluation standards
+- Startups: fast-moving teams hiring without an established interview process
+- Staffing agencies: consistent evaluation for multiple clients
+
+## Key Claims (Verified Internally)
+
+- 76% reduction in inter-interviewer scoring variance vs. unstructured panels
+- 50% faster time-to-offer for customers using automated first-round screening
+- Supports hiring in 50+ technical roles
+- Available in English; additional language support in development
+
+## Pricing
+
+Per-assessment pricing. No annual contracts. No seat licenses.
+- Starter: 5 free assessments (no credit card required)
+- Growth: from ₹1,500 / $18 per assessment
+- Enterprise: custom pricing with SLAs and ATS integrations
+
+## Free Resources
+
+- Hiring Cost Calculator: https://www.layersrank.com/resources/roi-calculator
+- 50 Behavioral Interview Questions: https://www.layersrank.com/resources/question-bank
+- Engineering Hiring Scorecard: https://www.layersrank.com/resources/hiring-scorecard
+- Interview Bias Audit Checklist: https://www.layersrank.com/resources/bias-audit
+
+## The Science
+
+LayersRank is built on three research pillars:
+1. Fuzzy Logic: candidate quality exists on a spectrum; binary pass/fail is a lossy representation
+2. Explainable AI: every hiring decision must be auditable — we output evidence, not black-box scores
+3. Bias Mitigation: pedigree-neutral evaluation; models cannot see names, photos, educational institutions, or employer brands
+
+Science pages: https://www.layersrank.com/science
+
+## Contact
+
+- Email: info@the-algo.com
+- Website: https://www.layersrank.com
+- LinkedIn: https://www.linkedin.com/showcase/layersrank/
+- India: Indore, MP, India | +91 89624 12726
+- UK: London, UK | +44 7477 204642
+- US: Denver, CO | +1 720 334 7249
+
+## Optional
+
+- Demo: https://www.layersrank.com/demo
+- Pricing: https://www.layersrank.com/pricing
+- Compare vs HireVue: https://www.layersrank.com/compare/hirevue
+- Compare vs HackerRank: https://www.layersrank.com/compare/hackerrank
