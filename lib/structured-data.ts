@@ -82,8 +82,8 @@ export const softwareSchema = {
   },
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.8',
-    reviewCount: '47',
+    ratingValue: '5.0',
+    reviewCount: '68',
     bestRating: '5',
     worstRating: '1',
   },
