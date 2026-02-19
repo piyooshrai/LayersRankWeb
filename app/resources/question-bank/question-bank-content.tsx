@@ -213,38 +213,30 @@ export function QuestionBankContent() {
           {/* Email gate */}
           {!unlocked && (
             <div id="download" className="mt-12">
-              <div className="relative">
-                {/* Blurred preview teaser */}
-                <div className="pointer-events-none select-none" aria-hidden="true">
-                  <div className="space-y-4 opacity-40 blur-[2px]">
-                    {gatedSections.map((s) => {
-                      const colors = sectionColors[s.id];
-                      return (
-                        <div key={s.id} className={`rounded-xl ${colors.bg} p-6`}>
-                          <p className={`font-mono text-xs font-bold uppercase tracking-wider ${colors.text}`}>
-                            Section {s.id}
-                          </p>
-                          <h3 className="mt-2 text-xl font-bold text-ink">{s.title}</h3>
-                          <p className="mt-2 text-sm text-ink-light">{s.description}</p>
-                          <p className="mt-1 text-xs text-ink-muted">{s.subtitle}</p>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-
-                {/* Overlay gate */}
-                <div className="absolute inset-0 flex items-start justify-center pt-8">
-                  <div className="w-full max-w-md">
-                    <LeadGateForm
-                      title="Unlock All 50 Questions"
-                      description="You\u2019ve seen Section 1. Enter your email to access all 5 sections with scoring rubrics and best practices."
-                      ctaLabel="Get Full Question Bank"
-                      onSubmit={() => setUnlocked(true)}
-                    />
-                  </div>
+              {/* What's behind the gate */}
+              <div className="mb-6 rounded-xl border border-gray-200 bg-paper-off p-5">
+                <p className="text-sm font-semibold text-ink">40 more questions across 4 sections:</p>
+                <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                  {gatedSections.map((s) => {
+                    const colors = sectionColors[s.id];
+                    return (
+                      <div key={s.id} className="flex items-center gap-2">
+                        <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-xs font-bold ${colors.badge}`}>
+                          {s.id}
+                        </span>
+                        <span className="text-sm text-ink-light">{s.title}</span>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
+
+              <LeadGateForm
+                title="Unlock All 50 Questions"
+                description="You've seen Section 1. Enter your email to access all 5 sections with scoring rubrics and best practices."
+                ctaLabel="Get Full Question Bank"
+                onSubmit={() => setUnlocked(true)}
+              />
             </div>
           )}
 
