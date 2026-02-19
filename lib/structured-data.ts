@@ -37,40 +37,6 @@ export const fullOrganizationSchema = {
     'https://www.linkedin.com/showcase/layersrank/',
     'https://www.the-algo.com',
   ],
-  location: [
-    {
-      '@type': 'Place',
-      name: 'Indore Office',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Indore',
-        addressRegion: 'Madhya Pradesh',
-        addressCountry: 'IN',
-      },
-      telephone: '+918962412726',
-    },
-    {
-      '@type': 'Place',
-      name: 'London Office',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'London',
-        addressCountry: 'GB',
-      },
-      telephone: '+447477204642',
-    },
-    {
-      '@type': 'Place',
-      name: 'Denver Office',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Denver',
-        addressRegion: 'CO',
-        addressCountry: 'US',
-      },
-      telephone: '+17203347249',
-    },
-  ],
 };
 
 /* ── Website (homepage only) ─────────────────────────────── */

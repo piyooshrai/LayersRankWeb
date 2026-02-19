@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: 'Is the platform secure enough for our compliance requirements?',
-    a: 'SOC 2 Type II certified. GDPR compliant. ISO 27001 aligned. India data residency available. Role-based access controls. SSO integration. Regular penetration testing. We can provide security documentation for your InfoSec review.',
+    a: 'India data residency available. Role-based access controls. SSO integration. Regular penetration testing. We can provide security documentation for your InfoSec review.',
   },
   {
     q: 'What languages do you support?',
@@ -704,7 +704,7 @@ export default function GccPage() {
               { href: '/solutions/enterprise', title: 'Enterprise Solutions', desc: 'Large-scale hiring beyond GCCs' },
               { href: '/solutions/technical-hiring', title: 'Technical Hiring', desc: 'Deep dive on engineering assessment' },
               { href: '/compare/hirevue', title: 'Compare vs. HireVue', desc: 'How LayersRank differs' },
-              { href: '/security', title: 'Security', desc: 'Compliance and data handling details' },
+              { href: '/contact', title: 'Contact Us', desc: 'Compliance and data handling inquiries' },
             ].map((link) => (
               <Link
                 key={link.href}

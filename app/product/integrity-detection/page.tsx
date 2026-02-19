@@ -687,11 +687,11 @@ export default function IntegrityDetectionPage() {
               </span>
             </Link>
             <Link
-              href="/security"
+              href="/contact"
               className="group rounded-xl border border-gray-200 bg-white p-6 transition-shadow hover:shadow-lg"
             >
-              <h3 className="text-lg font-bold text-ink group-hover:text-brand-yellow">Security</h3>
-              <p className="mt-2 text-sm text-ink-light">Data handling and compliance documentation.</p>
+              <h3 className="text-lg font-bold text-ink group-hover:text-brand-yellow">Contact Us</h3>
+              <p className="mt-2 text-sm text-ink-light">Questions about data handling and compliance.</p>
               <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-brand-yellow">
                 Learn more
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -709,8 +709,8 @@ export default function IntegrityDetectionPage() {
         description="See how integrity detection works in practice. Book a demo and we'll walk through flagged and clean report examples -- exactly what you'd see for real candidates."
         cta="Book a Demo"
         ctaHref="/demo"
-        secondaryCta="View Security Documentation"
-        secondaryCtaHref="/security"
+        secondaryCta="View Science"
+        secondaryCtaHref="/science"
         variant="gradient"
       />
     </>

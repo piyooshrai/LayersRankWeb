@@ -85,9 +85,7 @@ const routes: SitemapRoute[] = [
   // Company & legal
   { path: '/company', priority: 0.5, changeFrequency: 'monthly' },
   { path: '/about', priority: 0.5, changeFrequency: 'monthly' },
-  { path: '/careers', priority: 0.5, changeFrequency: 'weekly' },
   { path: '/contact', priority: 0.5, changeFrequency: 'monthly' },
-  { path: '/security', priority: 0.5, changeFrequency: 'monthly' },
   { path: '/legal/privacy', priority: 0.4, changeFrequency: 'yearly' },
   { path: '/legal/terms', priority: 0.4, changeFrequency: 'yearly' },
   { path: '/legal/ai-ethics', priority: 0.4, changeFrequency: 'yearly' },

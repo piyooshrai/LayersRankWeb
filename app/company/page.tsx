@@ -13,7 +13,7 @@ export default function CompanyPage() {
       <p>LayersRank builds explainable AI hiring infrastructure for high-volume engineering and GCC hiring programs. Team includes AI infrastructure architects, industrial-organizational researchers, and hiring operations specialists.</p>
       <h2 className="text-2xl font-semibold text-navy">Contact</h2>
       <p>Email: rigor@layersrank.com</p>
-      <p>Primary hubs: Bangalore, Hyderabad, Pune, NCR. Expansion support for KSA and UAE.</p>
+      <p>Serving teams across India with expansion support for KSA and UAE.</p>
     </div>
   );
 }
