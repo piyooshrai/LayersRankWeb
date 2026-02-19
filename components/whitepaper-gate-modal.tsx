@@ -231,7 +231,7 @@ export function WhitepaperGateModal({
 
             <p className="text-xs text-ink-muted">
               By downloading, you agree to our{' '}
-              <a href="/privacy" className="underline hover:text-ink">Privacy Policy</a>.
+              <a href="/legal/privacy" className="underline hover:text-ink">Privacy Policy</a>.
             </p>
           </form>
         )}

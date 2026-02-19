@@ -848,7 +848,7 @@ Weighted average:
                 Confidence Scoring &rarr;
               </Link>
               <Link
-                href="/product/adaptive-follow-up"
+                href="/product/adaptive-questioning"
                 className="rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-ink hover:border-brand-yellow hover:bg-brand-yellow/5"
               >
                 Adaptive Follow-Up &rarr;
