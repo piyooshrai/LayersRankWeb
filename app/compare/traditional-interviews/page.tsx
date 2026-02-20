@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
 
 export const metadata = makeMetadata({
   title: 'Structured vs Unstructured Interviews | LayersRank',
@@ -28,7 +28,15 @@ export default function CompareTraditionalInterviewsPage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="Structured vs unstructured interview comparison" search="structured interview professional evaluation" />
+          <div className="relative aspect-[16/9] overflow-hidden rounded-xl">
+            <Image
+              src="/images/compare-structured-vs-unstructured.png"
+              alt="Structured vs unstructured interview comparison — evidence-based hiring assessment methodology"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 
