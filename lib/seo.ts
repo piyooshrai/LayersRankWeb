@@ -11,6 +11,7 @@ export function makeMetadata({
   path: string;
 }): Metadata {
   const canonical = `${siteConfig.url}${path}`;
+  const ogImage = `${siteConfig.url}/images/OG Default.JPG`;
   return {
     title,
     description,
@@ -21,12 +22,14 @@ export function makeMetadata({
       url: canonical,
       title,
       description,
-      siteName: siteConfig.name
+      siteName: siteConfig.name,
+      images: [{ url: ogImage, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title,
-      description
+      description,
+      images: [ogImage],
     }
   };
 }

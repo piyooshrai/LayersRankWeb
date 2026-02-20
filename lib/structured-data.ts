@@ -51,14 +51,6 @@ export const websiteSchema = {
   publisher: {
     '@id': `${siteConfig.url}/#organization`,
   },
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: {
-      '@type': 'EntryPoint',
-      urlTemplate: `${siteConfig.url}/search?q={search_term_string}`,
-    },
-    'query-input': 'required name=search_term_string',
-  },
 };
 
 /* ── Software application ────────────────────────────────── */
@@ -124,7 +116,7 @@ export function generateArticleSchema(post: ArticleData) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    '@id': `${siteConfig.url}/resources/blog/${post.slug}#article`,
+    '@id': `${siteConfig.url}/blog/${post.slug}#article`,
     headline: post.title,
     description: post.description,
     datePublished: post.datePublished,
@@ -138,7 +130,7 @@ export function generateArticleSchema(post: ArticleData) {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${siteConfig.url}/resources/blog/${post.slug}`,
+      '@id': `${siteConfig.url}/blog/${post.slug}`,
     },
     ...(post.imageUrl
       ? {

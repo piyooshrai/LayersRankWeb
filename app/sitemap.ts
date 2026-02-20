@@ -73,7 +73,7 @@ const routes: SitemapRoute[] = [
 
   // Resources
   { path: '/resources', priority: 0.7, changeFrequency: 'weekly' },
-  { path: '/resources/blog', priority: 0.7, changeFrequency: 'daily' },
+  { path: '/blog', priority: 0.7, changeFrequency: 'daily' },
   { path: '/resources/whitepapers', priority: 0.7, changeFrequency: 'weekly' },
   { path: '/resources/case-studies', priority: 0.7, changeFrequency: 'weekly' },
   { path: '/resources/roi-calculator', priority: 0.8, changeFrequency: 'monthly' },
@@ -83,11 +83,8 @@ const routes: SitemapRoute[] = [
   { path: '/resources/sample-report', priority: 0.6, changeFrequency: 'monthly' },
 
   // Company & legal
-  { path: '/company', priority: 0.5, changeFrequency: 'monthly' },
   { path: '/about', priority: 0.5, changeFrequency: 'monthly' },
   { path: '/contact', priority: 0.5, changeFrequency: 'monthly' },
-  { path: '/legal/privacy', priority: 0.4, changeFrequency: 'yearly' },
-  { path: '/legal/terms', priority: 0.4, changeFrequency: 'yearly' },
   { path: '/legal/ai-ethics', priority: 0.4, changeFrequency: 'yearly' },
 ];
 
@@ -102,7 +99,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${siteConfig.url}/resources/blog/${post.slug}`,
+    url: `${siteConfig.url}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: 'monthly',
     priority: 0.6,

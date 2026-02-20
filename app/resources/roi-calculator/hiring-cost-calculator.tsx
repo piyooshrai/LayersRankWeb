@@ -722,7 +722,7 @@ export function HiringCostCalculator() {
               </div>
 
               <p className="mt-8 text-xs text-ink-muted">
-                LayersRank by The Algorithm &middot; www.layersrank.com &middot; hello@layersrank.com
+                LayersRank by The Algorithm &middot; www.layersrank.com &middot; info@the-algo.com
               </p>
             </div>
           </section>

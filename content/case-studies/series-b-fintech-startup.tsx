@@ -723,8 +723,8 @@ export default function CaseStudyFintech() {
         </p>
         <p className="text-sm text-ink-muted text-center">
           For questions about this case study or to discuss how LayersRank could help your startup hire faster, contact{' '}
-          <a href="mailto:sales@layersrank.com" className="font-medium text-[#2ecc71] hover:underline">
-            sales@layersrank.com
+          <a href="mailto:info@the-algo.com" className="font-medium text-[#2ecc71] hover:underline">
+            info@the-algo.com
           </a>
         </p>
         <p className="mt-3 text-xs text-ink-muted text-center">&copy; 2025 LayersRank by The Algorithm. All rights reserved.</p>

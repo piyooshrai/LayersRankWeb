@@ -19,7 +19,7 @@ export default function ResourcesPage() {
         </Link>
         <Link href="/resources/whitepapers" className="rounded-xl border border-slate-200 bg-white p-6">
           <h2 className="text-2xl font-semibold text-navy">Whitepapers</h2>
-          <p className="mt-2 text-slate-700">Downloadable technical research with email gating stub.</p>
+          <p className="mt-2 text-slate-700">Downloadable technical research on confidence scoring, bias, and structured interviews.</p>
         </Link>
       </div>
     </div>

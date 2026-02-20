@@ -76,8 +76,7 @@ const footerColumns = [
       { label: 'Science', href: '/science' },
       { label: 'Pricing', href: '/pricing' },
       { label: 'AI Ethics', href: '/legal/ai-ethics' },
-      { label: 'Privacy', href: '/legal/privacy' },
-      { label: 'Terms', href: '/legal/terms' },
+      { label: 'Privacy', href: 'https://www.the-algo.com/privacy-policy' },
     ],
   },
 ];
@@ -122,12 +121,23 @@ export function Footer() {
               <ul className="space-y-2.5">
                 {column.links.map((link, i) => (
                   <li key={`${link.label}-${i}`}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-gray-400 transition-colors hover:text-white"
-                    >
-                      {link.label}
-                    </Link>
+                    {link.href.startsWith('http') ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-gray-400 transition-colors hover:text-white"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-sm text-gray-400 transition-colors hover:text-white"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

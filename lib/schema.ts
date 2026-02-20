@@ -5,7 +5,7 @@ export const organizationSchema = {
   '@type': 'Organization',
   name: 'LayersRank',
   url: siteConfig.url,
-  logo: `${siteConfig.url}/images/logo-placeholder.svg`,
+  logo: `${siteConfig.url}/images/LayersRank By The Algorithm Logo Transparent.png`,
   sameAs: ['https://www.linkedin.com/company/layersrank'],
   description: siteConfig.description
 };
@@ -28,14 +28,14 @@ export function articleSchema({
     description,
     datePublished,
     author: {
-      '@type': 'Person',
-      name: 'AI Infrastructure Architect'
+      '@type': 'Organization',
+      name: 'LayersRank Team'
     },
     publisher: {
       '@type': 'Organization',
       name: 'LayersRank'
     },
-    mainEntityOfPage: `${siteConfig.url}/resources/blog/${slug}`
+    mainEntityOfPage: `${siteConfig.url}/blog/${slug}`
   };
 }
 
