@@ -284,7 +284,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-4xl px-6">
           <div className="grid gap-4 text-center md:grid-cols-3">
             {[
-              { city: 'Indore, India', label: 'HQ' },
+              { city: 'Indore, India', label: '' },
               { city: 'London, UK', label: '' },
               { city: 'Denver, USA', label: '' },
             ].map((loc) => (
