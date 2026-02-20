@@ -1,6 +1,5 @@
 import { Hero } from '@/components/Hero';
 import { ImagePlaceholder } from '@/components/image-placeholder';
-import { TrustBar } from '@/components/TrustBar';
 import { ProblemSection } from '@/components/ProblemSection';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Differentiator } from '@/components/Differentiator';
@@ -26,7 +25,6 @@ export default function HomePage() {
           <ImagePlaceholder label="Indian hiring team reviewing structured interview results" search="indian professional interview office" />
         </div>
       </section>
-      <TrustBar />
       <ProblemSection />
       <HowItWorks />
       <Differentiator />
