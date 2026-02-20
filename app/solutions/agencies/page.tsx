@@ -509,7 +509,7 @@ export default function AgenciesPage() {
         title="Elevate Your Submissions"
         description="Stop being treated like a resume mill. Start submitting candidates with evidence that earns client trust."
         cta="Start Free Trial"
-        ctaHref="/signup"
+        ctaHref="/demo"
         secondaryCta="Book an Agency Demo"
         secondaryCtaHref="/demo"
         variant="gradient"

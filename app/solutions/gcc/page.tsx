@@ -99,8 +99,6 @@ export default function GccPage() {
         description="GCCs in Bangalore, Hyderabad, Pune, and NCR face a unique challenge: scaling engineering hiring while maintaining quality and consistency across cities, panels, and time zones. LayersRank gives you that control — structured evaluation, confident scores, and audit-ready reports that get HQ approval faster."
         primaryCta="Book a GCC Demo"
         primaryCtaHref="/demo"
-        secondaryCta="Download GCC Playbook"
-        secondaryCtaHref="/resources/gcc-playbook"
       />
 
       <section className="bg-paper py-8">
@@ -743,7 +741,7 @@ export default function GccPage() {
         cta="Book a GCC Demo"
         ctaHref="/demo"
         secondaryCta="Download GCC Hiring Playbook"
-        secondaryCtaHref="/resources/gcc-playbook"
+        secondaryCtaHref="/demo"
         variant="gradient"
       />
     </>

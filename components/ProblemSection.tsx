@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 const stats = [
   {
     value: '68%',
@@ -16,6 +14,20 @@ const stats = [
     label: 'of interview evaluations have significant panel disagreement',
     color: 'text-brand-yellow',
   },
+];
+
+const funnelStages = [
+  { label: 'Résumés Screened', count: 240, width: '100%', bg: 'bg-gray-200', text: 'text-ink-muted' },
+  { label: 'Phone Screens', count: 82, width: '65%', bg: 'bg-brand-orange/20', text: 'text-brand-orange' },
+  { label: 'Technical Rounds', count: 34, width: '38%', bg: 'bg-brand-yellow/20', text: 'text-brand-yellow' },
+  { label: 'Final Panel', count: 12, width: '18%', bg: 'bg-brand-green/20', text: 'text-brand-green' },
+  { label: 'Offers Made', count: 5, width: '9%', bg: 'bg-brand-green/30', text: 'text-brand-green' },
+];
+
+const panelScores = [
+  { interviewer: 'Interviewer A', score: 82, verdict: 'Hire' },
+  { interviewer: 'Interviewer B', score: 41, verdict: 'No Hire' },
+  { interviewer: 'Interviewer C', score: 75, verdict: 'Hire' },
 ];
 
 export function ProblemSection() {
@@ -46,7 +58,7 @@ export function ProblemSection() {
           ))}
         </div>
 
-        {/* Supporting Content with Image */}
+        {/* Supporting Content with Visualization */}
         <div className="mt-16 grid items-center gap-8 md:grid-cols-2 md:gap-12">
           <div className="space-y-4">
             <p className="text-lg text-ink-light">
@@ -60,14 +72,73 @@ export function ProblemSection() {
               shortlist quality cannot be defended clearly.
             </p>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-gray-200">
-            <Image
-              src="/images/problem-recruiter-screening.svg"
-              alt="Recruiter reviewing applications on laptop in modern office"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
+
+          {/* Hiring Funnel + Disagreement Mockup */}
+          <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg">
+            {/* Header */}
+            <div className="border-b border-gray-200 bg-paper-off px-5 py-3">
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-semibold text-ink">Hiring Pipeline &middot; Q4 2024</p>
+                <span className="rounded-full bg-brand-red/10 px-2.5 py-0.5 text-xs font-medium text-brand-red">
+                  68% wasted
+                </span>
+              </div>
+            </div>
+
+            {/* Funnel */}
+            <div className="px-5 py-4">
+              <p className="mb-3 text-xs font-medium uppercase tracking-wider text-ink-muted">Pipeline Funnel</p>
+              <div className="space-y-2">
+                {funnelStages.map((stage) => (
+                  <div key={stage.label} className="flex items-center gap-3">
+                    <span className="w-24 shrink-0 text-xs text-ink-muted">{stage.label}</span>
+                    <div className="flex-1">
+                      <div
+                        className={`h-5 rounded ${stage.bg} flex items-center justify-end pr-2 transition-all`}
+                        style={{ width: stage.width }}
+                      >
+                        <span className={`text-xs font-bold ${stage.text}`}>{stage.count}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-2 text-xs text-ink-muted">
+                <span className="font-semibold text-brand-red">163 candidates</span> dropped between screen and technical &mdash; recruiter hours lost
+              </p>
+            </div>
+
+            {/* Panel Disagreement */}
+            <div className="border-t border-gray-200 px-5 py-4">
+              <div className="mb-3 flex items-center justify-between">
+                <p className="text-xs font-medium uppercase tracking-wider text-ink-muted">Panel Disagreement</p>
+                <span className="rounded-full bg-brand-orange/10 px-2 py-0.5 text-xs font-medium text-brand-orange">
+                  Split verdict
+                </span>
+              </div>
+              <div className="space-y-2">
+                {panelScores.map((p) => (
+                  <div key={p.interviewer} className="flex items-center gap-3">
+                    <span className="w-24 shrink-0 text-xs text-ink-muted">{p.interviewer}</span>
+                    <div className="flex flex-1 items-center gap-2">
+                      <div className="h-2 flex-1 overflow-hidden rounded-full bg-gray-100">
+                        <div
+                          className={`h-full rounded-full ${p.score >= 70 ? 'bg-brand-green' : 'bg-brand-red'}`}
+                          style={{ width: `${p.score}%` }}
+                        />
+                      </div>
+                      <span className="w-6 text-right text-xs font-bold text-ink">{p.score}</span>
+                    </div>
+                    <span className={`w-14 text-right text-xs font-semibold ${p.verdict === 'Hire' ? 'text-brand-green' : 'text-brand-red'}`}>
+                      {p.verdict}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-2 text-xs text-ink-muted">
+                Average: 66 &mdash; but the <span className="font-semibold text-brand-orange">41-point spread</span> tells the real story
+              </p>
+            </div>
           </div>
         </div>
       </div>

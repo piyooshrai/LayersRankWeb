@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 const features = [
   {
@@ -17,6 +16,37 @@ const features = [
   {
     title: 'Cross-City Consistency',
     description: 'Same evaluation standards across Bangalore, Hyderabad, Pune, and NCR.',
+  },
+];
+
+const cities = [
+  {
+    name: 'Bangalore',
+    roles: 128,
+    avgScore: 74,
+    consistency: 92,
+    topRole: 'Backend Engineer',
+  },
+  {
+    name: 'Hyderabad',
+    roles: 96,
+    avgScore: 71,
+    consistency: 89,
+    topRole: 'Full-Stack Dev',
+  },
+  {
+    name: 'Pune',
+    roles: 64,
+    avgScore: 73,
+    consistency: 91,
+    topRole: 'DevOps Engineer',
+  },
+  {
+    name: 'NCR',
+    roles: 52,
+    avgScore: 70,
+    consistency: 87,
+    topRole: 'Data Engineer',
   },
 ];
 
@@ -57,15 +87,87 @@ export function GCCSection() {
             </Link>
           </div>
 
-          {/* Image */}
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-gray-700">
-            <Image
-              src="/images/gcc-bangalore-office-team.svg"
-              alt="Large Indian engineering team meeting in a modern tech office in Bangalore"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
+          {/* Cross-City Hiring Dashboard Mockup */}
+          <div className="overflow-hidden rounded-2xl border border-gray-700 bg-gray-900 shadow-2xl">
+            {/* Dashboard Header */}
+            <div className="border-b border-gray-700 bg-gray-800/80 px-5 py-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-2 rounded-full bg-brand-green" />
+                  <p className="text-sm font-semibold text-white">Cross-City Hiring Dashboard</p>
+                </div>
+                <span className="font-mono text-xs text-gray-500">Q4 2024</span>
+              </div>
+            </div>
+
+            {/* Summary Row */}
+            <div className="grid grid-cols-3 border-b border-gray-700/50 px-5 py-3">
+              <div>
+                <p className="text-xs text-gray-500">Total Open Roles</p>
+                <p className="text-lg font-bold text-white">340</p>
+              </div>
+              <div>
+                <p className="text-xs text-gray-500">Avg. Consistency</p>
+                <p className="text-lg font-bold text-brand-green">90%</p>
+              </div>
+              <div>
+                <p className="text-xs text-gray-500">HQ Audit Status</p>
+                <p className="text-xs mt-1 font-semibold text-brand-green">
+                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand-green mr-1 align-middle" />
+                  Ready
+                </p>
+              </div>
+            </div>
+
+            {/* City Rows */}
+            <div className="divide-y divide-gray-700/50">
+              {cities.map((city) => (
+                <div key={city.name} className="px-5 py-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-yellow/10">
+                        <span className="text-xs font-bold text-brand-yellow">{city.name.slice(0, 2).toUpperCase()}</span>
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium text-white">{city.name}</p>
+                        <p className="text-xs text-gray-500">{city.topRole}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4 text-right">
+                      <div>
+                        <p className="text-xs text-gray-500">Roles</p>
+                        <p className="text-sm font-bold text-white">{city.roles}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs text-gray-500">Avg</p>
+                        <p className="text-sm font-bold text-white">{city.avgScore}</p>
+                      </div>
+                      <div className="w-16">
+                        <p className="text-xs text-gray-500">Consistency</p>
+                        <div className="mt-0.5 flex items-center gap-1.5">
+                          <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-700">
+                            <div
+                              className={`h-full rounded-full ${city.consistency >= 90 ? 'bg-brand-green' : 'bg-brand-yellow'}`}
+                              style={{ width: `${city.consistency}%` }}
+                            />
+                          </div>
+                          <span className={`text-xs font-bold ${city.consistency >= 90 ? 'text-brand-green' : 'text-brand-yellow'}`}>
+                            {city.consistency}%
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Footer */}
+            <div className="border-t border-gray-700 bg-gray-800/50 px-5 py-2.5">
+              <p className="text-xs text-gray-500">
+                Powered by LayersRank &middot; Panel scores normalized across locations
+              </p>
+            </div>
           </div>
         </div>
       </div>
