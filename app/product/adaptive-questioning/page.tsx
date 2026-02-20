@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
+import { ProductMockup } from '@/components/product-mockup';
 import { JsonLd } from '@/components/json-ld';
 
 export const metadata = makeMetadata({
@@ -85,7 +85,7 @@ export default function AdaptiveQuestioningPage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="Interview interface showing adaptive follow-up question in real-time" search="chat interface ai follow-up question interview" />
+          <ProductMockup type="adaptive-questioning" />
         </div>
       </section>
 

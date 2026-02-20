@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
+import { ProductMockup } from '@/components/product-mockup';
 import { JsonLd } from '@/components/json-ld';
 
 export const metadata = makeMetadata({
@@ -123,7 +123,7 @@ export default function ConfidenceScoringPage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="Confidence-weighted scoring dashboard comparison" search="data visualization confidence metrics scoring" />
+          <ProductMockup type="confidence-scoring" />
         </div>
       </section>
 

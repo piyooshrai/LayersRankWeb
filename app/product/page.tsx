@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/json-ld';
-import { ImagePlaceholder } from '@/components/image-placeholder';
+import { ProductMockup } from '@/components/product-mockup';
 
 
 export const metadata = makeMetadata({
@@ -292,10 +292,7 @@ export default function ProductPage() {
             </Link>
           </div>
           <div className="mt-12 max-w-3xl">
-            <ImagePlaceholder
-              label="Indian hiring team reviewing candidate on screen"
-              search="indian professional interview office"
-            />
+            <ProductMockup type="dashboard" />
           </div>
         </div>
       </section>
@@ -367,10 +364,7 @@ export default function ProductPage() {
             the report, every score is backed by consistent evidence.
           </p>
           <div className="mt-8">
-            <ImagePlaceholder
-              label="Platform screenshot or flow diagram"
-              search="hiring platform dashboard screenshot"
-            />
+            <ProductMockup type="platform-flow" />
           </div>
         </div>
       </section>
