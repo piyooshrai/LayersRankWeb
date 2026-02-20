@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
 import { JsonLd } from '@/components/json-ld';
 import { LeadMagnetCTA } from '@/components/lead-magnet-cta';
 
@@ -63,7 +63,15 @@ export default function EnterprisePage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="Indian enterprise office with large-scale hiring operations" search="indian corporate enterprise office hiring operations" />
+          <div className="relative aspect-[16/9] overflow-hidden rounded-xl">
+            <Image
+              src="/images/solutions-enterprise-hiring.png"
+              alt="Indian enterprise office with large-scale hiring operations — structured candidate assessment at scale"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 

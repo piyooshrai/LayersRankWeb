@@ -12,7 +12,8 @@ export function Hero() {
             Structured Hiring for Recruiters and Engineering Leaders
           </p>
           <h1 className="text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-            Stop Guessing.{' '}
+            Stop Guessing.
+            <br />
             <span className="text-brand-yellow">Start Ranking.</span>
           </h1>
           <p className="max-w-xl text-lg leading-relaxed text-gray-300">
@@ -42,8 +43,8 @@ export function Hero() {
         <div className="relative">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-gray-700 shadow-2xl">
             <Image
-              src="/images/hero-indian-interview-panel.png"
-              alt="Indian woman professional in a modern office interview setting"
+              src="/images/hero-hiring-team.png"
+              alt="Indian hiring team reviewing structured interview results with LayersRank candidate ranking platform"
               fill
               className="object-cover"
               priority

@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
 import { JsonLd } from '@/components/json-ld';
 
 export const metadata = makeMetadata({
@@ -62,7 +62,15 @@ export default function CampusHiringPage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="Indian college students at campus placement drive" search="indian college students campus placement interview" />
+          <div className="relative aspect-[16/9] overflow-hidden rounded-xl">
+            <Image
+              src="/images/solutions-campus-hiring.png"
+              alt="Indian college students at campus placement drive — pedigree-neutral graduate recruitment at scale"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 

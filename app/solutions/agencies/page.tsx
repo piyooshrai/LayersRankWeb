@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
 import { JsonLd } from '@/components/json-ld';
 
 export const metadata = makeMetadata({
@@ -62,7 +62,15 @@ export default function AgenciesPage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="Recruitment agency delivering scored candidate reports to client" search="recruitment agency staffing professionals candidate screening" />
+          <div className="relative aspect-[16/9] overflow-hidden rounded-xl">
+            <Image
+              src="/images/solutions-agencies-screening.png"
+              alt="Recruitment agency professionals screening candidates with scored assessment reports and confidence-weighted rankings"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 

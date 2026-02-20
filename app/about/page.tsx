@@ -1,6 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { PageHero, PageCTA } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
 import { makeMetadata } from '@/lib/seo';
 
 export const metadata = makeMetadata({
@@ -22,7 +22,15 @@ export default function AboutPage() {
 
       <section className="bg-paper-off px-6 py-12">
         <div className="mx-auto max-w-7xl">
-          <ImagePlaceholder label="LayersRank founding team" search="indian tech founder professional" />
+          <div className="relative aspect-[16/9] overflow-hidden rounded-xl">
+            <Image
+              src="/images/about-founding-team.png"
+              alt="LayersRank founding team — AI-powered structured hiring platform built for India and Middle East recruitment"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1280px"
+            />
+          </div>
         </div>
       </section>
 

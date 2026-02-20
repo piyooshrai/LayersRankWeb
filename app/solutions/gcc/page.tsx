@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
 import { JsonLd } from '@/components/json-ld';
 import { LeadMagnetCTA } from '@/components/lead-magnet-cta';
 
@@ -105,7 +105,15 @@ export default function GccPage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="GCC engineering hiring at scale across Indian cities" search="bangalore tech office team meeting engineering" />
+          <div className="relative aspect-[16/9] overflow-hidden rounded-xl">
+            <Image
+              src="/images/solutions-gcc-bangalore.png"
+              alt="Bangalore tech office team — GCC engineering hiring platform for consistent evaluation across Indian cities"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 

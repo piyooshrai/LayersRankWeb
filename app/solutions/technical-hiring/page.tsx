@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
 import { JsonLd } from '@/components/json-ld';
 
 export const metadata = makeMetadata({
@@ -58,7 +58,15 @@ export default function TechnicalHiringPage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="Engineers discussing system design and technical architecture" search="software engineers technical discussion whiteboard system design" />
+          <div className="relative aspect-[16/9] overflow-hidden rounded-xl">
+            <Image
+              src="/images/solutions-technical-hiring.png"
+              alt="Software engineers at whiteboard discussing system design — structured technical hiring assessment"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
         </div>
       </section>
 
