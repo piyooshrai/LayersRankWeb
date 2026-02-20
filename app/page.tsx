@@ -1,5 +1,5 @@
 import { Hero } from '@/components/Hero';
-import { ImagePlaceholder } from '@/components/image-placeholder';
+import Image from 'next/image';
 import { ProblemSection } from '@/components/ProblemSection';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Differentiator } from '@/components/Differentiator';
@@ -22,7 +22,15 @@ export default function HomePage() {
       <Hero />
       <section className="bg-ink px-6 pb-20">
         <div className="mx-auto max-w-7xl">
-          <ImagePlaceholder label="Indian hiring team reviewing structured interview results" search="indian professional interview office" />
+          <div className="relative aspect-[16/9] overflow-hidden rounded-xl">
+            <Image
+              src="/images/hero-hiring-team.png"
+              alt="Indian hiring team reviewing structured interview results with LayersRank candidate ranking platform"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1280px"
+            />
+          </div>
         </div>
       </section>
       <ProblemSection />
