@@ -97,7 +97,7 @@ export default function AboutPage() {
             <p>
               That&apos;s when we found our answer in an unexpected place: fuzzy mathematics.
               Specifically, a framework called{' '}
-              <Link href="/science/tr-q-rofns" className="font-medium text-brand-yellow hover:text-brand-orange">
+              <Link href="/science/fuzzy-logic" className="font-medium text-brand-yellow hover:text-brand-orange">
                 TR-q-ROFNs
               </Link>{' '}
               (Type-Reduced q-Rung Orthopair Fuzzy Numbers) that was designed for complex

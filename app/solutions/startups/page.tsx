@@ -54,7 +54,7 @@ export default function StartupsPage() {
         title="Hire Fast Without Hiring Wrong"
         description="You're scaling from 20 to 100 engineers. Every hire matters. One bad senior engineer can set your roadmap back six months. LayersRank helps you move fast with confidence — structured first-rounds in 48 hours, not 2 weeks."
         primaryCta="Start Free Trial"
-        primaryCtaHref="/signup"
+        primaryCtaHref="/demo"
         secondaryCta="See Pricing"
         secondaryCtaHref="/pricing"
       />
@@ -570,7 +570,7 @@ export default function StartupsPage() {
         title="Stop trading speed for quality"
         description="Start your free trial. 5 interviews included. See what confident, fast hiring feels like."
         cta="Start Free Trial"
-        ctaHref="/signup"
+        ctaHref="/demo"
         secondaryCta="Book a 15-Minute Demo"
         secondaryCtaHref="/demo"
         variant="gradient"

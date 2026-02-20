@@ -55,7 +55,7 @@ export default function IndiaPage() {
         title="Built for How India Hires"
         description="LayersRank isn't an American product localized for India. It's built for the Indian tech ecosystem: understanding of the college tier system, regional talent variations, realistic INR pricing, and infrastructure that works in Tier-2 cities. Standardize hiring across Bangalore, Hyderabad, Pune, NCR, and Chennai."
         primaryCta="Start Free Trial"
-        primaryCtaHref="/signup"
+        primaryCtaHref="/demo"
         secondaryCta="Book an India Demo"
         secondaryCtaHref="/demo"
       />
@@ -601,7 +601,7 @@ export default function IndiaPage() {
         title="Hiring in India? Let's Talk."
         description="See how LayersRank works for Indian tech hiring. Demo tailored to your cities, your roles, your scale."
         cta="Start Free Trial"
-        ctaHref="/signup"
+        ctaHref="/demo"
         secondaryCta="Book an India Demo"
         secondaryCtaHref="/demo"
         variant="gradient"

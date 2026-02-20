@@ -683,7 +683,7 @@ Refusal degree: πᵢ = (1 - (μᵢ)^q - (νᵢ)^q)^(1/q)
                 color: 'bg-brand-yellow/10 text-brand-yellow',
               },
               {
-                href: '/science/explainable-ai',
+                href: '/science/explainability',
                 title: 'Explainable AI',
                 desc: 'How every score traces to evidence. Audit trails and decision documentation. What explainability means for compliance and candidate feedback.',
                 color: 'bg-brand-green/10 text-brand-green',
@@ -724,7 +724,7 @@ Refusal degree: πᵢ = (1 - (μᵢ)^q - (νᵢ)^q)^(1/q)
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
               { href: '/science/fuzzy-logic', title: 'Fuzzy Logic Framework', desc: 'Mathematical foundation' },
-              { href: '/science/explainable-ai', title: 'Explainable AI', desc: 'Transparency and audit trails' },
+              { href: '/science/explainability', title: 'Explainable AI', desc: 'Transparency and audit trails' },
               { href: '/science/bias-mitigation', title: 'Bias Mitigation', desc: 'Fair evaluation approach' },
               { href: '/product', title: 'Product Overview', desc: 'How the science becomes product' },
             ].map((link) => (
