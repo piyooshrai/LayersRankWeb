@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA, FeatureCard, FeatureGrid } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
+import { ProductMockup } from '@/components/product-mockup';
 
 export const metadata = makeMetadata({
   title: 'Interview Question Bank | LayersRank',
@@ -121,7 +121,7 @@ export default function QuestionBankPage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="Question library browse interface" search="question library assessment platform" />
+          <ProductMockup type="question-bank" />
         </div>
       </section>
 

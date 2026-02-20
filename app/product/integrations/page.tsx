@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA, FeatureCard, FeatureGrid } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
+import { ProductMockup } from '@/components/product-mockup';
 
 export const metadata = makeMetadata({
   title: 'Integrations | LayersRank',
@@ -78,7 +78,7 @@ export default function IntegrationsPage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="ATS integration flow diagram" search="software integration workflow diagram" />
+          <ProductMockup type="integration-flow" />
         </div>
       </section>
 

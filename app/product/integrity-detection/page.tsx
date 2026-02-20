@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { PageHero, PageCTA } from '@/components/page-sections';
-import { ImagePlaceholder } from '@/components/image-placeholder';
+import { ProductMockup } from '@/components/product-mockup';
 import { JsonLd } from '@/components/json-ld';
 
 export const metadata = makeMetadata({
@@ -65,7 +65,7 @@ export default function IntegrityDetectionPage() {
 
       <section className="bg-paper py-8">
         <div className="mx-auto max-w-4xl px-6">
-          <ImagePlaceholder label="Integrity detection dashboard showing behavioral signals" search="security verification dashboard monitoring" />
+          <ProductMockup type="integrity-detection" />
         </div>
       </section>
 

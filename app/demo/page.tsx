@@ -1,4 +1,4 @@
-import { ImagePlaceholder } from '@/components/image-placeholder';
+import { ProductMockup } from '@/components/product-mockup';
 import { DemoForm } from '@/components/demo-form';
 import { makeMetadata } from '@/lib/seo';
 
@@ -68,7 +68,7 @@ export default function DemoPage() {
 
             {/* Right: Form */}
             <div className="space-y-8">
-            <ImagePlaceholder label="Platform demo preview" search="software demo presentation screen" />
+            <ProductMockup type="demo-preview" />
             <DemoForm />
             </div>
           </div>

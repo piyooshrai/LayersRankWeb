@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { makeMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/json-ld';
-import { ImagePlaceholder } from '@/components/image-placeholder';
+import { ProductMockup } from '@/components/product-mockup';
 import { LeadMagnetCTA } from '@/components/lead-magnet-cta';
 
 export const metadata = makeMetadata({
@@ -134,10 +134,7 @@ export default function StructuredInterviewsPage() {
             </Link>
           </div>
           <div className="mt-12 max-w-3xl">
-            <ImagePlaceholder
-              label="Candidate taking structured video interview on laptop"
-              search="indian candidate video interview laptop"
-            />
+            <ProductMockup type="interview-interface" />
           </div>
         </div>
       </section>
@@ -643,10 +640,7 @@ export default function StructuredInterviewsPage() {
           </div>
 
           <div className="mt-8">
-            <ImagePlaceholder
-              label="Candidate on mobile taking interview"
-              search="person mobile phone interview"
-            />
+            <ProductMockup type="mobile-interview" />
           </div>
         </div>
       </section>
