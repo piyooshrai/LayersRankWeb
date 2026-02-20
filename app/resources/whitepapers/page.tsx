@@ -23,8 +23,8 @@ const papers: WhitepaperDef[] = [
     audience: 'Technical',
     format: 'PDF',
     slug: 'tr-q-rofns-hiring-whitepaper',
-    secondaryLabel: 'View on SSRN',
-    secondaryHref: '#',
+    secondaryLabel: null,
+    secondaryHref: null,
   },
   {
     category: 'results',

@@ -149,5 +149,5 @@ export const navLinks = [
   { href: '/solutions/startups', label: 'Startups' },
   { href: '/resources', label: 'Resources' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/company', label: 'Company' },
+  { href: '/about', label: 'About' },
 ];

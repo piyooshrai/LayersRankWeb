@@ -875,8 +875,8 @@ export default function Whitepaper() {
       <div className="border-t border-gray-200 pt-8 text-center">
         <p className="text-sm text-ink-muted">
           For questions about implementing structured interviews in your organization, contact{' '}
-          <a href="mailto:research@layersrank.com" className="font-medium text-[#3b82f6] hover:underline">
-            research@layersrank.com
+          <a href="mailto:info@the-algo.com" className="font-medium text-[#3b82f6] hover:underline">
+            info@the-algo.com
           </a>
         </p>
         <p className="mt-3 text-xs text-ink-muted">&copy; 2025 LayersRank by The Algorithm. All rights reserved.</p>

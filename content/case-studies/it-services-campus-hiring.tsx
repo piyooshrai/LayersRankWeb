@@ -873,8 +873,8 @@ export default function CaseStudyCampus() {
         </p>
         <p className="text-sm text-ink-muted text-center">
           For questions about this case study or to discuss campus hiring at scale, contact{' '}
-          <a href="mailto:sales@layersrank.com" className="font-medium text-[#f39c12] hover:underline">
-            sales@layersrank.com
+          <a href="mailto:info@the-algo.com" className="font-medium text-[#f39c12] hover:underline">
+            info@the-algo.com
           </a>
         </p>
         <p className="mt-3 text-xs text-ink-muted text-center">&copy; 2025 LayersRank by The Algorithm. All rights reserved.</p>

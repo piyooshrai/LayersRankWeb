@@ -49,10 +49,10 @@ export default function ContactPage() {
                 Pricing, demos, and enterprise inquiries.
               </p>
               <a
-                href="mailto:sales@layersrank.com"
+                href="mailto:info@the-algo.com"
                 className="mt-3 inline-block text-sm font-medium text-brand-yellow hover:text-brand-orange"
               >
-                sales@layersrank.com
+                info@the-algo.com
               </a>
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-6">
@@ -66,10 +66,10 @@ export default function ContactPage() {
                 Technical help, account questions, and product feedback.
               </p>
               <a
-                href="mailto:support@layersrank.com"
+                href="mailto:info@the-algo.com"
                 className="mt-3 inline-block text-sm font-medium text-brand-yellow hover:text-brand-orange"
               >
-                support@layersrank.com
+                info@the-algo.com
               </a>
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-6">
@@ -83,10 +83,10 @@ export default function ContactPage() {
                 Integration partnerships, reseller programs, and strategic alliances.
               </p>
               <a
-                href="mailto:partners@layersrank.com"
+                href="mailto:info@the-algo.com"
                 className="mt-3 inline-block text-sm font-medium text-brand-yellow hover:text-brand-orange"
               >
-                partners@layersrank.com
+                info@the-algo.com
               </a>
             </div>
           </div>

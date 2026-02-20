@@ -133,14 +133,8 @@ export function Navigation() {
           </Link>
         </nav>
 
-        {/* CTA Buttons */}
-        <div className="hidden items-center gap-3 lg:flex">
-          <Link
-            href="/demo"
-            className="rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-paper-off"
-          >
-            Log In
-          </Link>
+        {/* CTA Button */}
+        <div className="hidden items-center lg:flex">
           <Link
             href="/demo"
             className="rounded-md bg-brand-yellow px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-brand-orange"
@@ -181,17 +175,10 @@ export function Navigation() {
             >
               Pricing
             </Link>
-            <div className="flex gap-3 pt-4">
+            <div className="pt-4">
               <Link
                 href="/demo"
-                className="flex-1 rounded-md border border-gray-300 py-2 text-center text-sm font-medium text-ink"
-                onClick={() => setMobileOpen(false)}
-              >
-                Log In
-              </Link>
-              <Link
-                href="/demo"
-                className="flex-1 rounded-md bg-brand-yellow py-2 text-center text-sm font-semibold text-ink"
+                className="block rounded-md bg-brand-yellow py-2 text-center text-sm font-semibold text-ink"
                 onClick={() => setMobileOpen(false)}
               >
                 Book Demo
