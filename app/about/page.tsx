@@ -279,17 +279,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── TEAM ── */}
-      <section className="bg-paper py-20">
-        <div className="mx-auto max-w-3xl px-6">
-          <h2 className="text-3xl font-bold text-ink">The Team</h2>
-          <div className="mt-8 rounded-xl border border-gray-200 bg-paper-off p-6">
-            <p className="font-semibold text-ink">Piyoosh Rai</p>
-            <p className="text-sm text-ink-muted">Founder</p>
-          </div>
-        </div>
-      </section>
-
       {/* ── LOCATIONS ── */}
       <section className="bg-paper-off py-16">
         <div className="mx-auto max-w-4xl px-6">
